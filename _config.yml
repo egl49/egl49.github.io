@@ -40,11 +40,12 @@ nav_pages:
   # - name: publications
   - name: presentations
   - name: research
-  - name: awards and grants
+  - name: awards
   # - name: software
   # - name: team
   - name: teaching
-  - name: leadership and activities
+  - name: leadership
+  - name: activities
   - name: blogs
 
 # ============================================================
