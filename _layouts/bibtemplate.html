@@ -17,6 +17,8 @@
   <div class="pub-actions" style="display: flex; gap: 6px; align-items: center;">
     {% if entry.link %}
     <a href="{{ entry.link }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">LINK</a>
+    {% elsif entry.url %}
+    <a href="{{ entry.url }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">LINK</a>
     {% endif %}
 
     {% if bibtest %}
