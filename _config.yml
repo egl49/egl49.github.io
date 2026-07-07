@@ -81,10 +81,11 @@ plugins: ["jekyll/scholar", "jekyll-sitemap"]
 scholar:
   last_name: Linscomb
   first_name: [Emma, Emma Grace, E.]
-  style: citesty
+  style: nature
   locale: en
   source: /assets/
   bibliography: ref.bib
+  bibliography_template: bibtemplate
 
 exclude:
   - Gemfile
