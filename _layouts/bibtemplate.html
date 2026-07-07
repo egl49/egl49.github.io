@@ -1,12 +1,21 @@
-<div class="pub-entry" data-pub-searchable style="margin-bottom: 25px; position: relative; padding-right: 100px;">
+<style>
+  /* Invisible container mode: hides raw layout strings and plaintext links leaks */
+  .clean-citation-text a,
+  .clean-citation-text [href],
+  .clean-citation-text {
+    word-break: break-word;
+  }
   
-  <div class="text-justify">
-    {% if reference contains 'https://' %}
-      {% assign parts = reference | split: 'https://' %}
-      {{ parts[0] | replace: '</div>', '' | replace: '</li>', '' | replace: '</ol>', '' | replace: '.,', '.' | replace: ' .', '.' | rstrip }}
-    {% else %}
-      {{ reference | replace: '</div>', '' | replace: '</li>', '' | replace: '</ol>', '' | replace: '.,', '.' | replace: ' .', '.' | rstrip }}
-    {% endif %}
+  /* Target and hide the raw trailing text links without breaking the HTML tree structure */
+  .clean-citation-text > a:last-of-type {
+    display: none !important;
+  }
+</style>
+
+<div class="pub-entry" data-pub-searchable style="margin-bottom: 30px; position: relative; padding-right: 100px;">
+  
+  <div class="text-justify clean-citation-text">
+    {{ reference | replace: '.,', '.' | replace: ' .', '.' }}
   </div>
 
   {% assign bibtest = false %}
@@ -19,7 +28,7 @@
     {% endfor %}
   {% endif %}
 
-  <div class="pub-actions" style="margin-top: 10px; display: flex; gap: 6px;">
+  <div class="pub-actions" style="margin-top: 12px; display: flex; gap: 6px;">
     {% if entry.url %}
     <a href="{{ entry.url }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500;">LINK</a>
     {% endif %}
