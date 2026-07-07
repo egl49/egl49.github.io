@@ -40,7 +40,7 @@ nav_pages:
   - name: publications
   # - name: presentations
   - name: research
-  - name: awards
+  # - name: awards
   # - name: software
   # - name: team
   - name: teaching
@@ -79,23 +79,12 @@ kramdown:
 plugins: ["jekyll/scholar", "jekyll-sitemap"]
 
 scholar:
-  last_name: Doe
-  first_name: [John]
+  last_name: Linscomb
+  first_name: [Emma, Emma Grace, E.]
   style: citesty
   locale: en
   source: /assets/
   bibliography: ref.bib
-  bibliography_template: bibtemplate
-  sort_by: year, month
-  order: descending
-  replace_strings: true
-  join_strings: true
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
-  query: "@*"
-  bibliography_list_attributes:
-    reversed: "reversed"
 
 exclude:
   - Gemfile
