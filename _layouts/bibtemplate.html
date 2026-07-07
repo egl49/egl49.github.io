@@ -1,13 +1,14 @@
-{% if reference contains 'http' %}
-  {% assign reference_clean = reference | split: 'http' | first %}
-{% else %}
-  {% assign reference_clean = reference %}
-{% endif %}
+<style>
+  /* Automatically hides any raw anchor text URL blocks rendered inside the text */
+  .pub-entry a[href^="http"] {
+    display: none !important;
+  }
+</style>
 
 <div class="pub-entry" data-pub-searchable style="margin-bottom: 35px; position: relative; padding-right: 120px; display: block;">
   
   <div class="text-justify" style="display: block; margin-bottom: 12px;">
-    {{ reference_clean | replace: '.,', '.' | replace: ' .', '.' | rstrip }}
+    {{ reference | replace: '.,', '.' | replace: ' .', '.' }}
   </div>
 
   {% assign bibtest = false %}
