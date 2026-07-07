@@ -13,6 +13,8 @@ permalink: /
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Computational Astrophysics</a>
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Observational Astronomy</a>
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Cosmology</a>
+
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip" style="border-style: dashed; opacity: 0.9;" title="Prospective Graduate Interest">Astroparticle Physics</a>
 </div>
 
 I am an undergraduate physics researcher at Cornell University specializing in computational astrophysics and observational astronomy. My work spans numerical relativity simulations with the Simulating eXtreme Spacetimes (SXS) Collaboration, digital data preservation workflows for historical astronomical observations, and calibration engineering for early-universe observational cosmology instruments.
