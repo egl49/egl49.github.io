@@ -1,12 +1,7 @@
-<div class="pub-entry" data-pub-searchable style="margin-bottom: 35px; position: relative; padding-right: 100px; display: block;">
+<div class="pub-entry" data-pub-searchable style="margin-bottom: 30px; position: relative; padding-right: 120px; display: block;">
   
-  <div class="text-justify" style="display: block;">
-    {% if reference contains 'https://' %}
-      {% assign reference_clean = reference | split: 'https://' | first %}
-      {{ reference_clean | replace: '.,', '.' | replace: ' .', '.' | rstrip }}
-    {% else %}
-      {{ reference | replace: '.,', '.' | replace: ' .', '.' }}
-    {% endif %}
+  <div class="text-justify" style="display: block; margin-bottom: 8px;">
+    {{ reference | replace: '.,', '.' | replace: ' .', '.' }}
   </div>
 
   {% assign bibtest = false %}
@@ -19,7 +14,7 @@
     {% endfor %}
   {% endif %}
 
-  <div class="pub-actions" style="margin-top: 12px; display: flex; gap: 6px;">
+  <div class="pub-actions" style="display: flex; gap: 6px; align-items: center;">
     {% if entry.url %}
     <a href="{{ entry.url }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">LINK</a>
     {% endif %}
@@ -32,15 +27,15 @@
       <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank" class="btn-pill btn-doi" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">DOI</a>
     {% endif %}
 
-    <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}" style="padding: 4px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 500; cursor: pointer;">BIB</button>
+    <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}" style="padding: 4px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 500; background-color: #f1f1f1; border: 1px solid #ccc; border-radius: 15px; cursor: pointer;">BIB</button>
 
     {% if entry.abstract %}
-    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}" style="padding: 4px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 500; cursor: pointer;">Abstract</button>
+    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}" style="padding: 4px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 500; background-color: #f1f1f1; border: 1px solid #ccc; border-radius: 15px; cursor: pointer;">Abstract</button>
     {% endif %}
   </div>
 
   {% if entry.year %}
-  <div class="badge-year" style="position: absolute; right: 0; top: 0; background-color: rgba(115, 59, 235, 0.1); color: #733BEB; border: 1px solid #733BEB; border-radius: 15px; padding: 2px 10px; font-size: 0.72em; font-weight: bold; text-transform: uppercase; white-space: nowrap; z-index: 10;">
+  <div class="badge-year" style="position: absolute; right: 0; top: 2px; background-color: rgba(115, 59, 235, 0.1); color: #733BEB; border: 1px solid #733BEB; border-radius: 15px; padding: 2px 10px; font-size: 0.72em; font-weight: bold; text-transform: uppercase; white-space: nowrap;">
     {% if entry.month %}
       {{ entry.month | slice: 0, 3 }} {{ entry.year }}
     {% else %}
