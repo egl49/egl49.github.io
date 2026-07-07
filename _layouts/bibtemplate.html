@@ -1,14 +1,12 @@
-<style>
-  /* Hard-scrubs any naked plaintext URLs generated inside the citation reference text block */
-  .text-justify a {
-    display: none !important;
-  }
-</style>
-
 <div class="pub-entry" data-pub-searchable style="margin-bottom: 25px; position: relative;">
   
   <div class="text-justify">
-    {{ reference | replace: '.,', '.' | replace: ' .', '.' }}
+    {% if reference contains 'https://' %}
+      {% assign parts = reference | split: 'https://' %}
+      {{ parts[0] | replace: '.,', '.' | replace: ' .', '.' | rstrip }}
+    {% else %}
+      {{ reference | replace: '.,', '.' | replace: ' .', '.' }}
+    {% endif %}
   </div>
 
   {% assign bibtest = false %}
