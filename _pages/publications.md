@@ -18,4 +18,4 @@ I am looking to use the SpECTRE code base to compare simulated solutions of neut
 
 *Selected oral talks and poster presentations given at symposia and national meetings.*
 
-{% bibliography --template bibtemplate %}
+{% bibliography %}
