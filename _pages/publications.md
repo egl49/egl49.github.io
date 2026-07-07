@@ -34,4 +34,4 @@ permalink: /publications/
 ## Conference & Seminar Presentations
 *Selected oral talks and poster presentations given at symposia and national meetings.*
 
-{% bibliography  %}
+{% bibliography %}
