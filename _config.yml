@@ -85,7 +85,7 @@ scholar:
   locale: en
   source: /assets/
   bibliography: ref.bib
-  bibliography_template: bibtemplate
+  template: bibtemplate
 
 exclude:
   - Gemfile
