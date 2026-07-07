@@ -18,6 +18,10 @@
   {% endif %}
 
   <div class="pub-actions">
+    {% if entry.url %}
+    <a href="{{ entry.url }}" target="_blank" class="btn-pill btn-url">Link</a>
+    {% endif %}
+    
     {% if bibtest %}
     <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf">PDF</a>
     {% endif %}
