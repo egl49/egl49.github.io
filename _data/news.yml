@@ -1,20 +1,38 @@
 # News items shown on the home page sidebar.
 # The 3 most recent are shown; all appear on /allnews.
 # Each entry needs: date, headline
-- date: 6 February, 1986
-  headline: "Appointed to the Rogers Commission investigating the Space Shuttle Challenger disaster"
+- date: 29 May, 2026
+  headline: "Awarded the AWIS Kirsten R. Lorentzen Scholarship"
+  
+- date: 3 May, 2026
+  headline: "Successfully hosted the 3rd-Annual AEPxPhysics Formal"
 
-- date: 1 January, 1980
-  headline: "National Medal of Science awarded by President Carter"
+- date: 30 April, 2026
+  headline: "Proposal Approved for my Senior Thesis under the Mentorship of Prof. Nils Deppe"
 
-- date: 21 October, 1965
-  headline: "Awarded the Nobel Prize in Physics for contributions to quantum electrodynamics"
+- date: 1 March, 2026
+  headline: "Published an Article in the SPS Observer"
 
-- date: 1 September, 1961
-  headline: "The Feynman Lectures on Physics begins publication"
+- date: 13 December, 2025
+  headline: "Elected President of the Cornell Society of Physics Students"
 
-- date: 1 June, 1959
-  headline: "Delivered 'There's Plenty of Room at the Bottom' talk at Caltech APS meeting"
+- date: 4 March, 2025
+  headline: "Accepted into the Yerkes Observatory 2025 Summer Research Internship Program"
 
-- date: 1 January, 1951
-  headline: "Joined the faculty at California Institute of Technology"
+- date: 26 January, 2025
+  headline: "Attended the CU*IP Conference in Syracuse, NY"
+
+- date: 10 January, 2025
+  headline: "Elected Vice President of the Cornell Society of Physics Students"
+
+- date: 15 March, 2024
+  headline: "Accepted into the Cornell Nexus Scholars Program to work with Prof. Abigail Crites on the TIME-CII Project"
+
+- date: 7 March, 2024
+  headline: "Accepted to the Women in Physics (WiP+) Chair Position with the Cornell Society of Physics Students"
+  
+- date: 3 February, 2024
+  headline: "Accepted into Hearsay A Cappella, one of Cornell's Premier Women's A Cappella Groups"
+
+- date: 30 March, 2023
+  headline: "Accepted into Cornell University to pursue a B.A. in Physics"
