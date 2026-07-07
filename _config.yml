@@ -37,15 +37,15 @@ analytics:
 # ============================================================
 nav_pages:
   - name: about
-  # - name: publications
-  - name: presentations
+  - name: publications
+  # - name: presentations
   - name: research
   - name: awards
   # - name: software
   # - name: team
   - name: teaching
   - name: leadership
-  - name: activities
+  # - name: activities
   - name: blogs
 
 # ============================================================
