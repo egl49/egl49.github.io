@@ -78,7 +78,6 @@ kramdown:
   parse_block_html: true
 
 plugins: ["jekyll/scholar", "jekyll-sitemap"]
-
 scholar:
   last_name: Linscomb
   first_name: [Emma, Emma Grace, E.]
@@ -87,6 +86,7 @@ scholar:
   source: /assets/
   bibliography: ref.bib
   bibliography_template: bibtemplate
+  bibliography_link: false
 
 exclude:
   - Gemfile
