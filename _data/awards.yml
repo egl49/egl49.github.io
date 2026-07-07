@@ -1,4 +1,7 @@
-# Awards and honors, shown on the About page.
-# Each entry needs: name
-- name: SPS Association for Women in Science Kirsten R. Lorentzen Award: $2500 (2026)
-- name: Cornell Arts & Sciences Nexus Scholar: $7000 (2024)
+- name: "SPS Association for Women in Science Kirsten R. Loretzen Award ($2,500)"
+  year: "2026"
+  description: "Awarded annually to an exceptionally well-rounded student who excels in studies as well as outdoor activities, service, sports, music, or other non-academic pursuits."
+
+- name: "Cornell Arts & Sciences Nexus Scholar ($7,000)"
+  year: "2024"
+  description: "Fellowship funding a 9-week, full-time summer research experience at Cornell University."
