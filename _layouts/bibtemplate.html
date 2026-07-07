@@ -1,7 +1,3 @@
-{% comment %}
-  1. This processes the text completely safely BEFORE any HTML container tags open,
-     preventing the browser layout from breaking apart or bleeding ghost tags.
-{% endcomment %}
 {% if reference contains 'http' %}
   {% assign reference_clean = reference | split: 'http' | first %}
 {% else %}
@@ -31,10 +27,6 @@
 
     {% if bibtest %}
     <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">PDF</a>
-    {% endif %}
-
-    {% if entry.doi and entry.url == nil %}
-      <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank" class="btn-pill btn-doi" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">DOI</a>
     {% endif %}
 
     <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}" style="padding: 4px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 500; background-color: #f1f1f1; border: 1px solid #ccc; cursor: pointer;">BIB</button>
