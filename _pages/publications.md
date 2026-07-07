@@ -4,7 +4,7 @@ layout: gridlay
 sitemap: false
 permalink: /publications/
 ---
-## Senior Thesis Proposal
+# Senior Thesis Proposal
 > **Title:** *Examining Tidal Deformability of Neutron Stars by Simulating Inspiral Degeneracy of Differing Internal Structures*
 > **Advisor:** Prof. Nils Deppe
 > 
@@ -12,9 +12,9 @@ permalink: /publications/
 > 
 > [Download Full Proposal PDF](/papers/Senior_Thesis_Proposal.pdf)
 > 
-## Publications & Presentations
+# Publications & Presentations
 
-<input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
+<!-- <input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
 
 <div class="section-card" id="pubList">
 <h3>Preprints</h3>
@@ -28,4 +28,9 @@ permalink: /publications/
 <h3>Refereed Conference Proceedings</h3>
 
 {% bibliography --query @inproceedings %}
-</div>
+</div> -->
+
+## Conference & Seminar Presentations
+*Selected oral talks and poster presentations given at symposia and national meetings.*
+
+{% bibliography --query @inproceedings || @misc %}
