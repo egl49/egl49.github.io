@@ -4,7 +4,14 @@ layout: gridlay
 sitemap: false
 permalink: /publications/
 ---
-
+## Senior Thesis Proposal
+> **Title:** *Examining Tidal Deformability of Neutron Stars by Simulating Inspiral Degeneracy of Differing Internal Structures*
+> **Advisor:** Prof. Nils Deppe
+> 
+> I am looking to use the SpECTRE code base to compare simulated solutions of neutron stars that exhibit a degenerate tital deformability factor, but different internal equations of state. I hope to explore this question of how internal microphysics can influence the observable macrophysics of a binary neutron star system to determine whether there are any observable differences that would be visible at the resolution of future gravitational wave observatories currently planned. 
+> 
+> [Download Full Proposal PDF](link_to_your_pdf_if_you_have_one)
+> 
 ## Publications & Presentations
 
 <input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
