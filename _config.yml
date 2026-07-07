@@ -86,7 +86,6 @@ scholar:
   source: /assets/
   bibliography: ref.bib
   bibliography_template: bibtemplate
-  bibliography_link: false
 
 exclude:
   - Gemfile
