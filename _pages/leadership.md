@@ -1,5 +1,5 @@
 ---
 layout: gridlay
-title: "My Leadership Experience"
+title: "Leadership & Extracurriculars"
 permalink: /leadership/
 ---
