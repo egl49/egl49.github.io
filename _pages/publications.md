@@ -10,7 +10,7 @@ permalink: /publications/
 > 
 > I am looking to use the SpECTRE code base to compare simulated solutions of neutron stars that exhibit a degenerate tital deformability factor, but different internal equations of state. I hope to explore this question of how internal microphysics can influence the observable macrophysics of a binary neutron star system to determine whether there are any observable differences that would be visible at the resolution of future gravitational wave observatories currently planned. 
 > 
-> [Download Full Proposal PDF](link_to_your_pdf_if_you_have_one)
+> [Download Full Proposal PDF](/papers/Senior_Thesis_Proposal.pdf)
 > 
 ## Publications & Presentations
 
