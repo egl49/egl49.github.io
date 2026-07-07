@@ -1,13 +1,9 @@
-<div class="pub-entry" data-pub-searchable style="margin-bottom: 25px; position: relative;">
+<div class="pub-entry" data-pub-searchable style="margin-bottom: 25px; position: relative; padding-right: 100px;">
   
   <div class="text-justify">
     {% if reference contains 'https://' %}
       {% assign parts = reference | split: 'https://' %}
-      {{ parts[0] | replace: '.,', '.' | replace: ' .', '.' | rstrip }}
-    {% else %}
-      {{ reference | replace: '.,', '.' | replace: ' .', '.' }}
-    {% endif %}
-  </div>
+      {{ parts[0] | replace: '.,', '.' | replace: ' .', '.' | rstrip }}</div>
 
   {% assign bibtest = false %}
   {% if entry.file %}
@@ -38,6 +34,16 @@
     <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}" style="padding: 4px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 500;">Abstract</button>
     {% endif %}
   </div>
+
+  {% if entry.year %}
+  <div class="badge-year" style="position: absolute; right: 0; top: 0; background-color: rgba(115, 59, 235, 0.1); color: #733BEB; border: 1px solid #733BEB; border-radius: 15px; padding: 2px 10px; font-size: 0.72em; font-weight: bold; text-transform: uppercase; white-space: nowrap;">
+    {% if entry.month %}
+      {{ entry.month | slice: 0, 3 }} {{ entry.year }}
+    {% else %}
+      {{ entry.year }}
+    {% endif %}
+  </div>
+  {% endif %}
 
   <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 10px;">
     <pre style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e9ecef; overflow-x: auto;">{{ entry.bibtex }}</pre>
