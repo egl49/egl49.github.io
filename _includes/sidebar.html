@@ -69,7 +69,7 @@
       {% assign total_exps = site.data.experiences | size | to_float %}
       {% assign percent = count | times: 100 | divided_by: total_exps %}
 
-      <a href="{{ site.url }}{{ site.baseurl }}/skills/#{{ skill | slugify }}" style="text-decoration: none; color: inherit; display: block; margin-bottom: 14px;">
+      <a href="{{ site.url }}{{ site.baseurl }}/allskills/#{{ skill | slugify }}" style="text-decoration: none; color: inherit; display: block; margin-bottom: 14px;">
         <div class="skill-row" style="cursor: pointer;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
           <div style="display: flex; justify-content: space-between; font-size: 0.85em; margin-bottom: 5px;">
             <span style="font-weight: 600; color: #333;">{{ skill }}</span>
