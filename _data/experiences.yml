@@ -1,0 +1,21 @@
+- id: "ula"
+  title: "Physics Undergraduate Learning Assistant (ULA)"
+  type: "teaching"
+  skills: ["Physics Education", "Public Speaking", "Mentorship", "Classroom Leadership"]
+
+- id: "simulating-extreme-spacetimes"
+  title: "Numerical Relativity & Compact Objects"
+  type: "research"
+  skills: ["Python", "C++", "Numerical Relativity", "SpECTRE", "Data Analysis"]
+
+- id: "sps-president"
+  title: "President, Cornell Society of Physics Students"
+  type: "leadership"
+  skills: ["Project Management", "Public Speaking", "Community Building", "Leadership"]
+
+- id: "wip-chair"
+  title: "WiP+ Chair, SPS"
+  type: "leadership"
+  skills: ["Community Building", "Mentorship", "Event Planning", "Public Speaking"]
+
+  
