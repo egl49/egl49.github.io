@@ -15,9 +15,14 @@ permalink: /research/
   <a href="{{ site.url }}{{ site.baseurl }}/research/simulating-extreme-spacetimes/" style="text-decoration: none; color: inherit; display: block; margin-bottom: 20px;">
     <div class="research-card" style="cursor: pointer; display: flex; transition: transform 0.2s ease-in-out; background: #fff; border: 1px solid #e1e1e1; border-radius: 8px; padding: 15px;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
       <img src="{{ site.url }}{{ site.baseurl }}/images/research/neutron-stars.svg" class="research-thumb" alt="Neutron star simulation" style="width: 100px; height: 100px; object-fit: cover; margin-right: 20px;">
-      <div class="research-body">
-        <h4 class="research-title" style="margin-top: 0;">Numerical Relativity & Compact Objects</h4>
-        <p class="research-desc">Investigating the tidal deformability of neutron stars using numerical relativity tools... <strong style="color: #733BEB;">Read more →</strong></p>
+      <div class="research-body" style="flex: 1;">
+        <h4 class="research-title" style="margin-top: 0; margin-bottom: 4px;">Numerical Relativity & Compact Objects</h4>
+        <div class="research-subtitles" style="font-size: 0.82em; color: #666; margin-bottom: 8px; line-height: 1.4;">
+          <strong>Institution:</strong> Cornell University <br>
+          <strong>Advisor:</strong> Prof. Nils Deppe <br>
+          <strong>Term:</strong> Aug 2025 – Present
+        </div>
+        <p class="research-desc" style="margin-top: 0;">Investigating the tidal deformability of neutron stars using numerical relativity tools... <strong style="color: #733BEB;">Read more →</strong></p>
       </div>
     </div>
   </a>
@@ -26,9 +31,14 @@ permalink: /research/
   <a href="{{ site.url }}{{ site.baseurl }}/research/yerkes-observatory/" style="text-decoration: none; color: inherit; display: block; margin-bottom: 20px;">
     <div class="research-card" style="cursor: pointer; display: flex; transition: transform 0.2s ease-in-out; background: #fff; border: 1px solid #e1e1e1; border-radius: 8px; padding: 15px;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
       <img src="{{ site.url }}{{ site.baseurl }}/images/research/nebula.svg" class="research-thumb" alt="Dumbbell Nebula M27" style="width: 100px; height: 100px; object-fit: cover; margin-right: 20px;">
-      <div class="research-body">
-        <h4 class="research-title" style="margin-top: 0;">Observational Astronomy & Nebular Evolution</h4>
-        <p class="research-desc">Analyzing long-baseline evolutionary characteristics of planetary nebulae... <strong style="color: #733BEB;">Read more →</strong></p>
+      <div class="research-body" style="flex: 1;">
+        <h4 class="research-title" style="margin-top: 0; margin-bottom: 4px;">Observational Astronomy & Nebular Evolution</h4>
+        <div class="research-subtitles" style="font-size: 0.82em; color: #666; margin-bottom: 8px; line-height: 1.4;">
+          <strong>Institution:</strong> Cornell University / Yerkes Observatory <br>
+          <strong>Advisor:</strong> Prof. Amanda Bauer <br>
+          <strong>Term:</strong> May 2025 – Aug 2025
+        </div>
+        <p class="research-desc" style="margin-top: 0;">Analyzing long-baseline evolutionary characteristics of planetary nebulae... <strong style="color: #733BEB;">Read more →</strong></p>
       </div>
     </div>
   </a>
@@ -37,9 +47,14 @@ permalink: /research/
   <a href="{{ site.url }}{{ site.baseurl }}/research/tomographic-ionized-carbon-intensity-mapping-experiment/" style="text-decoration: none; color: inherit; display: block; margin-bottom: 20px;">
     <div class="research-card" style="cursor: pointer; display: flex; transition: transform 0.2s ease-in-out; background: #fff; border: 1px solid #e1e1e1; border-radius: 8px; padding: 15px;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
       <img src="{{ site.url }}{{ site.baseurl }}/images/research/instrumentation.svg" class="research-thumb" alt="TIME Instrument detector" style="width: 100px; height: 100px; object-fit: cover; margin-right: 20px;">
-      <div class="research-body">
-        <h4 class="research-title" style="margin-top: 0;">Astronomical Instrumentation</h4>
-        <p class="research-desc">Developing and optimizing experimental submillimeter spectrometers... <strong style="color: #733BEB;">Read more →</strong></p>
+      <div class="research-body" style="flex: 1;">
+        <h4 class="research-title" style="margin-top: 0; margin-bottom: 4px;">Astronomical Instrumentation</h4>
+        <div class="research-subtitles" style="font-size: 0.82em; color: #666; margin-bottom: 8px; line-height: 1.4;">
+          <strong>Institution:</strong> Cornell University (Nexus Scholars) <br>
+          <strong>Advisor:</strong> Prof. Abigail Crites <br>
+          <strong>Term:</strong> Jan 2024 – May 2025
+        </div>
+        <p class="research-desc" style="margin-top: 0;">Developing and optimizing experimental submillimeter spectrometers... <strong style="color: #733BEB;">Read more →</strong></p>
       </div>
     </div>
   </a>
