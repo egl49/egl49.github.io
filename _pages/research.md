@@ -18,7 +18,7 @@ permalink: /research/
       <div class="research-body" style="flex: 1;">
         <h4 class="research-title" style="margin-top: 0; margin-bottom: 4px;">Numerical Relativity & Compact Objects</h4>
         <div class="research-subtitles" style="font-size: 0.82em; color: #666; margin-bottom: 8px; line-height: 1.4;">
-          <strong>Institution:</strong> Cornell University <br>
+          <strong>Organization:</strong> Simulating eXtreme Spacetimes <br>
           <strong>Advisor:</strong> Prof. Nils Deppe <br>
           <strong>Term:</strong> Aug 2025 – Present
         </div>
@@ -34,8 +34,8 @@ permalink: /research/
       <div class="research-body" style="flex: 1;">
         <h4 class="research-title" style="margin-top: 0; margin-bottom: 4px;">Observational Astronomy & Nebular Evolution</h4>
         <div class="research-subtitles" style="font-size: 0.82em; color: #666; margin-bottom: 8px; line-height: 1.4;">
-          <strong>Institution:</strong> Cornell University / Yerkes Observatory <br>
-          <strong>Advisor:</strong> Prof. Amanda Bauer <br>
+          <strong>Organization:</strong> Yerkes Observatory <br>
+          <strong>Advisor:</strong> Dr. Amanda Bauer <br>
           <strong>Term:</strong> May 2025 – Aug 2025
         </div>
         <p class="research-desc" style="margin-top: 0;">Analyzing long-baseline evolutionary characteristics of planetary nebulae... <strong style="color: #733BEB;">Read more →</strong></p>
@@ -50,7 +50,7 @@ permalink: /research/
       <div class="research-body" style="flex: 1;">
         <h4 class="research-title" style="margin-top: 0; margin-bottom: 4px;">Astronomical Instrumentation</h4>
         <div class="research-subtitles" style="font-size: 0.82em; color: #666; margin-bottom: 8px; line-height: 1.4;">
-          <strong>Institution:</strong> Cornell University (Nexus Scholars) <br>
+          <strong>Institution:</strong> Tomographic Ionized Carbon Intensity Mapping Experiment (TIME) <br>
           <strong>Advisor:</strong> Prof. Abigail Crites <br>
           <strong>Term:</strong> Jan 2024 – May 2025
         </div>
