@@ -22,7 +22,8 @@ permalink: /research/
           <strong>Advisor:</strong> Prof. Nils Deppe <br>
           <strong>Term:</strong> Aug 2025 – Present
         </div>
-        <p class="research-desc" style="margin-top: 0;">Investigating the tidal deformability of neutron stars using numerical relativity tools... \<strong style="color: #733BEB;">Read more →</strong></p>
+        <p class="research-desc" style="margin-top: 0;">Investigating the tidal deformability of neutron stars using numerical relativity tools... </p>
+        <div style="display: block; margin-top: 8px; color: #733BEB; font-weight: bold; font-size: 0.9em;">Read more →</div>
       </div>
     </div>
   </a>
@@ -38,7 +39,8 @@ permalink: /research/
           <strong>Advisor:</strong> Dr. Amanda Bauer <br>
           <strong>Term:</strong> May 2025 – Aug 2025
         </div>
-        <p class="research-desc" style="margin-top: 0;">Analyzing long-baseline evolutionary characteristics of planetary nebulae... \<strong style="color: #733BEB;">Read more →</strong></p>
+        <p class="research-desc" style="margin-top: 0;">Analyzing long-baseline evolutionary characteristics of planetary nebulae...</p>
+        <div style="display: block; margin-top: 8px; color: #733BEB; font-weight: bold; font-size: 0.9em;">Read more →</div>
       </div>
     </div>
   </a>
@@ -54,7 +56,8 @@ permalink: /research/
           <strong>Advisor:</strong> Prof. Abigail Crites <br>
           <strong>Term:</strong> Jan 2024 – May 2025
         </div>
-        <p class="research-desc" style="margin-top: 0;">Developing and optimizing experimental submillimeter spectrometers... \<strong style="color: #733BEB;">Read more →</strong></p>
+        <p class="research-desc" style="margin-top: 0;">Developing and optimizing experimental submillimeter spectrometers... </p>
+        <div style="display: block; margin-top: 8px; color: #733BEB; font-weight: bold; font-size: 0.9em;">Read more →</div>
       </div>
     </div>
   </a>
