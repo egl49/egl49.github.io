@@ -1,16 +1,17 @@
 ---
 title: "Skills & Competencies"
 layout: page
-permalink: /skills/
+permalink: /allskills/
 ---
 
 ## Skills & Competencies
+
+I use a central skills database to track which methodologies, languages, and technical abilities map across my research, teaching, and leadership positions. 
 
 ---
 
 {::options parse_block_html="false" /}
 
-<!-- Optional update for top of _pages/skills.md to maintain the ranking layout -->
 {% assign all_skills = "" | split: "," %}
 {% for exp in site.data.experiences %}
   {% for skill in exp.skills %}
@@ -28,19 +29,19 @@ permalink: /skills/
   {% if count < 10 %}{% assign prefix = "0" | append: count %}{% else %}{% assign prefix = count %}{% endif %}
   {% assign entry = prefix | append: "::" | append: skill %}
   {% assign skill_counts = skill_counts | push: entry %}
-endfor %}
+{% endfor %}
 
 {% assign sorted_skills = skill_counts | sort | reverse %}
 
 <div class="skills-timeline" style="margin-top: 30px;">
+  
   {% for entry in sorted_skills %}
     {% assign parts = entry | split: "::" %}
     {% assign count = parts[0] | plus: 0 %}
     {% assign skill = parts[1] %}
     
     <div id="{{ skill | slugify }}" style="margin-bottom: 40px; border-left: 3px solid #733BEB; padding-left: 20px;">
-       <!-- Rest of your original timeline code layout stays exactly the same -->
-       
+      
       <h3 style="margin-top: 0; color: #333; font-weight: 700;">{{ skill }}</h3>
       <p style="font-size: 0.9em; color: #666; margin-bottom: 15px;">Referenced in the following roles:</p>
       
