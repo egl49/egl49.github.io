@@ -8,12 +8,12 @@
   </div>
 
   <div class="pub-actions" style="display: flex; gap: 6px; align-items: center;">
-    {% if entry.url and entry.url != '' %}
-    <a href="{{ entry.url }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">LINK</a>
-    {% endif %}
-
-    {% if entry.file and entry.file != '' %}
-    <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">PDF</a>
+    {% if entry.howpublished and entry.howpublished != '' %}
+      {% if entry.howpublished contains '.pdf' or entry.howpublished contains '.PDF' %}
+      <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.howpublished }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">PDF</a>
+      {% elsif entry.howpublished contains 'http' %}
+      <a href="{{ entry.howpublished }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white !important; padding: 4px 14px; border-radius: 15px; font-size: 0.75em; text-decoration: none; font-weight: 500; display: inline-block;">LINK</a>
+      {% endif %}
     {% endif %}
 
     <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}" style="padding: 4px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 500; background-color: #f1f1f1; border: 1px solid #ccc; cursor: pointer;">BIB</button>
