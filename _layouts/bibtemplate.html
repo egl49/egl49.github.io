@@ -4,7 +4,7 @@
 <div class="pub-entry" data-pub-searchable style="margin-bottom: 35px; position: relative; padding-right: 120px; display: block;">
   
   <div class="text-justify" style="display: block; margin-bottom: 12px;">
-    {{ reference }}
+    {{ reference | remove: 'https://' | remove: 'http://' | regex_replace: /\b(www\.)?\w+\.\w+\/\S+/g, '' | regex_replace: /yerkes_sps_poster_final\.pdf/, '' }}
   </div>
 
   <div class="pub-actions" style="display: flex; gap: 6px; align-items: center;">
