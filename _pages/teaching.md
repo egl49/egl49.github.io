@@ -13,9 +13,13 @@ permalink: /teaching/
   {% for exp in site.data.experiences %}
     {% if exp.type == "teaching" %}
       
-      <a href="{{ site.url }}{{ site.baseurl }}/teaching/{% if exp.id == 'peer-mentor' %}mentorship{% else %}{{ exp.id }}{% endif %}/" id="{{ exp.id }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;">
+      {% if exp.has_page == true %}
+        <a href="{{ site.url }}{{ site.baseurl }}/teaching/{% if exp.id == 'peer-mentor' %}mentorship{% else %}{{ exp.id }}{% endif %}/" id="{{ exp.id }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;">
+      {% else %}
+        <div id="{{ exp.id }}" style="display: flex; flex-direction: column;">
+      {% endif %}
         
-        <div class="research-card" style="cursor: pointer; background: #fff; border: 1px solid #e1e1e1; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; height: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.01); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.04)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.01)';">
+        <div class="research-card" style="{% if exp.has_page == true %}cursor: pointer;{% else %}cursor: default;{% endif %} background: #fff; border: 1px solid #e1e1e1; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; height: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.01); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;" {% if exp.has_page == true %}onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.04)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.01)';"{% endif %}>
           
           {% if exp.image and exp.image != "" %}
             <div class="card-image-wrapper" style="width: 100%; height: 160px; overflow: hidden; border-bottom: 1px solid #e1e1e1; background: #fafafa;">
@@ -57,12 +61,18 @@ permalink: /teaching/
               </div>
             {% endif %}
 
-            <div style="display: block; margin-top: 14px; color: #733BEB; font-weight: bold; font-size: 0.9em; text-decoration: none;">Read more →</div>
+            {% if exp.has_page == true %}
+              <div style="display: block; margin-top: 14px; color: #733BEB; font-weight: bold; font-size: 0.9em; text-decoration: none;">Read more →</div>
+            {% endif %}
 
           </div>
         </div>
 
-      </a>
+      {% if exp.has_page == true %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
 
     {% endif %}
   {% endfor %}
