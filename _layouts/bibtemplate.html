@@ -1,8 +1,17 @@
 ---
 ---
 
-<div class="pub-entry" data-pub-searchable style="position: relative;">
-  <div class="text-justify">{{ reference }}</div>
+<div class="pub-entry" data-pub-searchable style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #fafafa; position: relative;">
+  
+  {% if entry.year %}
+  <div class="badge-year" style="position: absolute; right: 20px; top: 20px; background-color: #733BEB; color: white; border-radius: 15px; padding: 6px 14px; font-size: 0.75em; font-weight: bold; text-transform: uppercase; white-space: nowrap;">
+    {% if entry.month %}{{ entry.month | slice: 0, 3 }} {% endif %}{{ entry.year }}
+  </div>
+  {% endif %}
+
+  <div class="text-justify" style="margin-bottom: 15px; padding-right: 100px;">
+    {{ reference | remove: '<div' | remove: '</div>' | strip_html | prepend: '<div>' | append: '</div>' }}
+  </div>
 
   {% assign bibtest = false %}
   {% if entry.file %}
@@ -14,53 +23,47 @@
   {% endfor %}
   {% endif %}
 
-  <div class="pub-actions">
+  <div class="pub-actions" style="display: flex; gap: 8px; flex-wrap: wrap;">
     {% if bibtest %}
-    <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf">PDF</a>
+    <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">PDF</a>
     {% endif %}
 
     {% if entry.howpublished and entry.howpublished != '' %}
       {% if entry.howpublished contains '.pdf' %}
-      <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.howpublished }}" target="_blank" class="btn-pill btn-pdf">PDF</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.howpublished }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">PDF</a>
       {% elsif entry.howpublished contains 'http' %}
-      <a href="{{ entry.howpublished }}" target="_blank" class="btn-pill btn-link">LINK</a>
+      <a href="{{ entry.howpublished }}" target="_blank" class="btn-pill btn-link" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">LINK</a>
       {% endif %}
     {% endif %}
 
     {% if entry.url and entry.url != '' %}
       {% if entry.url contains 'http' %}
-      <a href="{{ entry.url }}" target="_blank" class="btn-pill btn-link">LINK</a>
+      <a href="{{ entry.url }}" target="_blank" class="btn-pill btn-link" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">LINK</a>
       {% endif %}
     {% endif %}
 
     {% if entry.type == 'unpublished' or entry.type == 'article' or entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' or entry.type == 'misc' %}
-    <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}">BIB</button>
+    <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}" style="background-color: #f1f1f1; color: #333; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid #ddd; cursor: pointer;">BIB</button>
     {% endif %}
 
     {% if entry.abstract %}
-    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}">Abstract</button>
+    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}" style="background-color: #f1f1f1; color: #333; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid #ddd; cursor: pointer;">Abstract</button>
     {% endif %}
   </div>
 
-  {% if entry.year %}
-  <div class="badge-year" style="position: absolute; right: 0; top: 0; background-color: rgba(115, 59, 235, 0.1); color: #733BEB; border: 1px solid #733BEB; border-radius: 15px; padding: 4px 12px; font-size: 0.75em; font-weight: bold; text-transform: uppercase; white-space: nowrap;">
-    {% if entry.month %}{{ entry.month | slice: 0, 3 }} {% endif %}{{ entry.year }}
-  </div>
-  {% endif %}
-
   {% if entry.abstract %}
-  <div class="pub-collapse" id="bib-{{ entry.key }}">
-    <pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
+  <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 15px;">
+    <pre style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.bibtex | remove: "entry.abstract" }}</pre>
   </div>
   {% else %}
-  <div class="pub-collapse" id="bib-{{ entry.key }}">
-    <pre>{{ entry.bibtex }}</pre>
+  <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 15px;">
+    <pre style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.bibtex }}</pre>
   </div>
   {% endif %}
 
   {% if entry.abstract %}
-  <div class="pub-collapse" id="abs-{{ entry.key }}">
-    <pre>{{ entry.abstract }}</pre>
+  <div class="pub-collapse" id="abs-{{ entry.key }}" style="display: none; margin-top: 15px;">
+    <pre style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.abstract }}</pre>
   </div>
   {% endif %}
 </div>
