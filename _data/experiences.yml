@@ -1,74 +1,171 @@
+# ==========================================
+# TEACHING EXPERIENCES
+# ==========================================
+
 - id: "ula"
-  title: "Physics Undergraduate Learning Assistant"
+  title: "Physics Undergraduate Learning Assistant (ULA)"
   type: "teaching"
+  organization: "Cornell University"
+  supervisor: "Physics Department Faculty"
+  term: "Academic Year Role"
+  image: "physics.svg"
+  description: "Facilitated student learning and collaborative problem-solving in undergraduate physics courses at Cornell. Led active-learning recitations, held office hours to clarify core conceptual frameworks, and supported peers in mastering foundational mathematical and physical tools."
   skills: ["Physics Education", "Public Speaking", "Mentorship", "Classroom Leadership", "Teaching", "Science Communication", "Communication", "Peer Mentoring", "Team Leadership"]
+
+- id: "peer-mentor"
+  title: "Peer Mentorship & Academic Support"
+  type: "teaching"
+  organization: "Cornell University"
+  supervisor: "Society of Physics Students"
+  term: "Continuous"
+  image: "peer-led.svg"
+  description: "Provided guidance on course selection, lab workflows, and technical skill development (such as Python and LaTeX) for underclassmen in the department, helping foster an inclusive and accessible environment for incoming physics and astronomy students."
+  skills: ["Mentorship", "Peer Mentoring", "Youth Mentoring", "Communication", "Community Outreach"]
+
+# ==========================================
+# RESEARCH EXPERIENCES
+# ==========================================
 
 - id: "simulating-extreme-spacetimes"
   title: "Research Assistant, Simulating eXtreme Spacetimes"
   type: "research"
+  organization: "Cornell University"
+  advisor: "Numerical Relativity Group Faculty"
+  term: "Aug 2025 - Present"
+  image: "neutron-stars.svg"
+  description: "Investigating compact object mergers and high-energy astrophysical dynamics using spectral numerical relativity infrastructures to model equations of state."
   skills: ["Python", "C++", "Numerical Relativity", "SpECTRE", "Data Analysis", "Computational Physics", "General Relativity", "Fluid Dynamics", "Relativity", "Theoretical Physics"]
-
-- id: "sps-president"
-  title: "President, SPS"
-  type: "leadership"
-  skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
-
-- id: "community-committee"
-  title: "Undergraduate Liaison, Physics Community Committee"
-  type: "leadership"
-  skills: ["Project Management", "Interdepartmental Liaison", "Community Outreach", "Communication", "Organizational Leadership"]
-
-- id: "formal-committee"
-  title: "Leader and Host, AEPxPhysics Formal Planning Committee"
-  type: "leadership"
-  skills: ["Project Management", "Event Planning", "Large Scale Events", "Budget Management", "Communication", "Team Leadership"]
-
-- id: "wip-chair"
-  title: "WiP+ Chair, SPS"
-  type: "leadership"
-  skills: ["Community Building", "Mentorship", "Event Planning", "Public Speaking", "Social Inclusion", "Gender Equality", "Women's Issues", "Community Outreach", "Communication", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling"]
 
 - id: "yerkes-observatory"
   title: "Undergraduate Research Intern, Yerkes Observatory"
   type: "research"
+  organization: "Yerkes Observatory"
+  advisor: "Archival Research Staff"
+  term: "May 2025 - Aug 2025"
+  image: "nebula.svg"
+  description: "Analyzing long-baseline astronomical data baselines and photographic plate archives to track nebular variations and historical stellar profiles."
   skills: ["SAO DS9", "AstrolmageJ", "Siril", "Observational Astronomy", "Astrophysics", "Telescope", "Image Analysis", "Digital Imaging", "Big Data", "Historical Research", "Historic Preservation", "Data Analysis", "Research Skills"]
 
 - id: "time-cii"
   title: "Research Assistant, Tomographic Ionized Carbon Intensity Mapping Experiment (TIME)"
   type: "research"
+  organization: "Cornell University Astrophysics"
+  advisor: "TIME Experiment Collaboration PIs"
+  term: "Jan 2025 - May 2025"
+  image: "cryo-array.svg"
+  description: "Assisting with instrumentation pipelines, cryogenic test array profiles, and structural telemetry modeling to analyze high-redshift line intensity signals."
   skills: ["Cryogenics", "Electronics", "Cosmology", "Hardware", "Hardware Installation", "Troubleshooting", "Astrophysics", "Telescope"]
-
-- id: "hearsay-acappella-choreo"
-  title: "Choreography Chair, Hearsay A Cappella"
-  type: "leadership"
-  skills: ["Teaching", "Communication", "Event Planning", "Organizational Leadership", "Team Leadership", "Scheduling"]
-
-- id: "hearsay-acappella-amd"
-  title: "Assistant Music Director, Hearsay A Cappella"
-  type: "leadership"
-  skills: ["Teaching", "Communication", "Event Planning", "Organizational Leadership", "Team Leadership", "Scheduling"]
-
-- id: "hearsay-acappella-alumni"
-  title: "Alumni Chair, Hearsay A Cappella"
-  type: "leadership"
-  skills: ["Alumni Relations", "Communication", "Interdepartmental Liaison", "Community Outreach", "Event Planning"]
-
-- id: "hearsay-acappella-social"
-  title: "Social Chair, Hearsay A Cappella"
-  type: "leadership"
-  skills: ["Event Planning", "Community Building", "Communication", "Budget Management", "Team Leadership"]
-
-- id: "alumni-interviewer"
-  title: "A Physicist Is... Profile Author and Interviewer"
-  type: "leadership"
-  skills: ["Interviewing", "Alumni Relations", "Profile Writing", "Communication", "Public Speaking", "Science Communication"]
-
-- id: "peer-mentor"
-  title: "Peer Mentor, SPS"
-  type: "leadership"
-  skills: ["Mentorship", "Peer Mentoring", "Youth Mentoring", "Communication", "Community Outreach"]
 
 - id: "cornell-academic"
   title: "Academic Coursework & General Skills"
   type: "research"
+  organization: "Cornell University"
+  advisor: "Department of Physics"
+  term: "Ongoing Portfolio"
+  image: ""
+  description: "Core physical schemas and structural mechanics mastered across upper-level physics modules, advanced analytical formulations, and mathematical frameworks."
   skills: ["LaTeX", "Applied Physics", "Particle Physics", "Experimental Physics", "Mathematics", "Applied Mathematics", "Physical Sciences", "French"]
+
+# ==========================================
+# LEADERSHIP & OUTREACH EXPERIENCES
+# ==========================================
+
+- id: "sps-president"
+  title: "President"
+  type: "leadership"
+  current: true
+  organization: "Cornell Society of Physics Students"
+  term: "Dec 2025 - Present"
+  image: "sps.svg"
+  description: "Directing departmental operations, community building, and professional development initiatives for the physics undergraduate community. Organizing academic forums, networking events with faculty, and student symposiums."
+  skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
+
+- id: "formal-committee"
+  title: "Leader and Host"
+  type: "leadership"
+  current: true
+  organization: "AEPxPhysics Formal Committee, Cornell Society of Physics Students and Cornell Applied Engineering Physics Society"
+  term: "Aug 2025 - Present"
+  image: "sps.svg"
+  description: "Coordinating cross-departmental logistics, venue planning, and student-faculty engagement activities for the annual collaborative formal gala celebration."
+  skills: ["Project Management", "Event Planning", "Large Scale Events", "Budget Management", "Communication", "Team Leadership"]
+
+- id: "hearsay-acappella-amd"
+  title: "Assistant Music Director"
+  type: "leadership"
+  current: true
+  organization: "Hearsay A Cappella"
+  term: "May 2025 - Present"
+  image: "music.svg"
+  description: "Leading musical arrangements, running vocal sectionals, and managing high-efficiency rehearsals to prepare the ensemble for campus performances and studio recording sets."
+  skills: ["Teaching", "Communication", "Event Planning", "Organizational Leadership", "Team Leadership", "Scheduling"]
+
+- id: "hearsay-acappella-choreo"
+  title: "Choreography Chair"
+  type: "leadership"
+  current: true
+  organization: "Hearsay A Cappella"
+  term: "May 2025 - Present"
+  image: "music.svg"
+  description: "Designing dynamic visual staging configurations and performance block choreography to enhance ensemble storytelling during live showcases."
+  skills: ["Teaching", "Communication", "Event Planning", "Organizational Leadership", "Team Leadership", "Scheduling"]
+
+- id: "hearsay-acappella-alumni"
+  title: "Alumni Chair"
+  type: "leadership"
+  current: true
+  organization: "Cornell Hearsay A Cappella"
+  term: "May 2026 - Present"
+  image: "music.svg"
+  description: "Designing dynamic visual staging configurations and performance block choreography to enhance ensemble storytelling during live showcases."
+  skills: ["Alumni Relations", "Communication", "Interdepartmental Liaison", "Community Outreach", "Event Planning"]
+
+- id: "alumni-interviewer"
+  title: "A Physicist Is... Profile Writer and Interviewer"
+  type: "leadership"
+  current: true
+  organization: "Cornell University, Department of Physics"
+  term: "Jan 2025 - Present"
+  image: "music.svg"
+  description: "Conducting spotlights and interviews with diverse physics scholars to share stories across the academic landscape, broadening perspective and accessibility options within physics."
+  skills: ["Interviewing", "Alumni Relations", "Profile Writing", "Communication", "Public Speaking", "Science Communication"]
+
+- id: "community-committee"
+  title: "Undergraduate Liaison"
+  type: "leadership"
+  current: true
+  organization: "Cornell Physics Community Committee"
+  term: "Feb 2024 - Present"
+  image: "music.svg"
+  description: "Collaborating with student, staff, and faculty representatives to formulate institutional frameworks that build supportive academic networks."
+  skills: ["Project Management", "Interdepartmental Liaison", "Community Outreach", "Communication", "Organizational Leadership"]
+
+- id: "wip-chair"
+  title: "Women and Gender Minorities in Physics and Related Fields (WiP+) Chair"
+  type: "leadership"
+  current: false
+  organization: "Cornell Society of Physics Students"
+  term: "Feb 2024 - Dec 2024"
+  image: "past-role1.svg"
+  description: "Directed advocacy discussion forums, community mentorship networks, and resources tailored to support historically marginalized demographics in physical sciences."
+  skills: ["Community Building", "Mentorship", "Event Planning", "Public Speaking", "Social Inclusion", "Gender Equality", "Women's Issues", "Community Outreach", "Communication", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling"]
+
+- id: "hearsay-acappella-social"
+  title: "Social Chair"
+  type: "leadership"
+  current: false
+  organization: "Hearsay A Cappella"
+  term: "May 2024 - Dec 2024"
+  image: "past-role2.svg"
+  description: "Spearheaded internal ensemble team-building events, retreats, and network outreach mixers to support interpersonal cohesion across members."
+  skills: ["Event Planning", "Community Building", "Communication", "Budget Management", "Team Leadership"]
+
+- id: "sps-vice-president"
+  title: "Vice President"
+  type: "leadership"
+  current: false
+  organization: "Cornell Society of Physics Students"
+  term: "Dec 2024 - Dec 2025"
+  image: "past-role1.svg"
+  description: "Managed scheduling, organized local academic forums, and supported coordination of undergraduate event promotion pipelines."
+  skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
