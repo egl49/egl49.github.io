@@ -1,7 +1,7 @@
 ---
 ---
 
-<div class="pub-entry" data-pub-searchable>
+<div class="pub-entry" data-pub-searchable style="position: relative;">
   <div class="text-justify">{{ reference }}</div>
 
   {% assign bibtest = false %}
@@ -43,7 +43,7 @@
   </div>
 
   {% if entry.year %}
-  <div class="badge-year">
+  <div class="badge-year" style="position: absolute; right: 0; top: 0; background-color: rgba(115, 59, 235, 0.1); color: #733BEB; border: 1px solid #733BEB; border-radius: 15px; padding: 4px 12px; font-size: 0.75em; font-weight: bold; text-transform: uppercase; white-space: nowrap;">
     {% if entry.month %}{{ entry.month | slice: 0, 3 }} {% endif %}{{ entry.year }}
   </div>
   {% endif %}
