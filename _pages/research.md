@@ -40,22 +40,22 @@ permalink: /research/
               </p>
             </div>
 
-            {% if exp.skills and exp.skills size > 0 %}
-              <div style="margin-top: auto; padding-top: 12px; border-top: 1px solid #f5f5f5;">
-                <details style="width: 100%;" onclick="event.stopPropagation();">
-                  <summary style="font-size: 0.82em; color: #733BEB; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 4px; outline: none; user-select: none;">
-                    <span>View Technical Stack</span>
-                  </summary>
-                  <div class="skill-badges" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px;">
-                    {% for skill in exp.skills %}
-                      <span style="display: inline-block; background: rgba(115, 59, 235, 0.06); color: #733BEB; font-size: 0.75em; padding: 4px 10px; border-radius: 12px; font-weight: 600; letter-spacing: 0.2px; white-space: nowrap;">
-                        {{ skill }}
-                      </span>
-                    {% endfor %}
-                  </div>
-                </details>
-              </div>
-            {% endif %}
+            {% if exp.skills and exp.skills.size > 0 %}
+  <div style="margin-top: auto; padding-top: 12px; border-top: 1px solid #f5f5f5;">
+    <details style="width: 100%;" onclick="event.stopPropagation();">
+      <summary style="font-size: 0.82em; color: #733BEB; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 4px; outline: none; user-select: none;">
+        <span>View Technical Stack</span>
+      </summary>
+      <div class="skill-badges" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px;">
+        {% for skill in exp.skills %}
+          <span style="display: inline-block; background: rgba(115, 59, 235, 0.06); color: #733BEB; font-size: 0.75em; padding: 4px 10px; border-radius: 12px; font-weight: 600; letter-spacing: 0.2px; white-space: nowrap;">
+            {{ skill }}
+          </span>
+        {% endfor %}
+      </div>
+    </details>
+  </div>
+{% endif %}
 
             <div style="display: block; margin-top: 14px; color: #733BEB; font-weight: bold; font-size: 0.9em; text-decoration: none;">Read more →</div>
 
