@@ -65,7 +65,7 @@
     {% endif %}
 
     {% if entry.type == 'unpublished' or entry.type == 'article' or entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' or entry.type == 'misc' %}
-    <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}" style="background-color: #f1f1f1; color: #333; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid #ddd; cursor: pointer;">BIB</button>
+    <button class="btn-pill btn-bib" onclick="copyBibToClipboard('bib-text-{{ entry.key }}')" style="background-color: #f1f1f1; color: #333; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid #ddd; cursor: pointer;">BIB</button>
     {% endif %}
 
     {% if entry.abstract %}
@@ -75,11 +75,11 @@
 
   {% if entry.abstract %}
   <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 15px;">
-    <pre style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.bibtex | remove: "entry.abstract" }}</pre>
+    <pre id="bib-text-{{ entry.key }}" style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.bibtex | remove: "entry.abstract" }}</pre>
   </div>
   {% else %}
   <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 15px;">
-    <pre style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.bibtex }}</pre>
+    <pre id="bib-text-{{ entry.key }}" style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.bibtex }}</pre>
   </div>
   {% endif %}
 
@@ -89,3 +89,60 @@
   </div>
   {% endif %}
 </div>
+
+<script>
+function copyBibToClipboard(elementId) {
+  const bibText = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(bibText).then(() => {
+    // Show toast notification
+    const toast = document.createElement('div');
+    toast.textContent = 'Citation copied to clipboard!';
+    toast.style.cssText = `
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      animation: slideIn 0.3s ease-out;
+    `;
+    document.body.appendChild(toast);
+    
+    // Remove toast after 2 seconds
+    setTimeout(() => {
+      toast.style.animation = 'slideOut 0.3s ease-out';
+      setTimeout(() => toast.remove(), 300);
+    }, 2000);
+  }).catch(() => {
+    alert('Failed to copy to clipboard');
+  });
+}
+</script>
+
+<style>
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}
+</style>
