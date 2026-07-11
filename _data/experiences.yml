@@ -5,6 +5,7 @@
 - id: "ula"
   title: "Physics Undergraduate Learning Assistant (ULA)"
   type: "teaching"
+  has_page: false
   organization: "Cornell University"
   supervisor: "Physics Department Faculty"
   term: "Academic Year Role"
@@ -15,6 +16,7 @@
 - id: "peer-mentor"
   title: "Peer Mentorship & Academic Support"
   type: "teaching"
+  has_page: false
   organization: "Cornell University"
   supervisor: "Society of Physics Students"
   term: "Continuous"
@@ -74,6 +76,7 @@
   title: "President"
   type: "leadership"
   current: true
+  has_page: true
   organization: "Cornell Society of Physics Students"
   term: "Dec 2025 - Present"
   image: "sps.svg"
@@ -84,6 +87,7 @@
   title: "Leader and Host"
   type: "leadership"
   current: true
+  has_page: true
   organization: "AEPxPhysics Formal Committee, Cornell Society of Physics Students and Cornell Applied Engineering Physics Society"
   term: "Aug 2025 - Present"
   image: "sps.svg"
@@ -94,6 +98,7 @@
   title: "Assistant Music Director"
   type: "leadership"
   current: true
+  has_page: false
   organization: "Hearsay A Cappella"
   term: "May 2025 - Present"
   image: "music.svg"
@@ -104,6 +109,7 @@
   title: "Choreography Chair"
   type: "leadership"
   current: true
+  has_page: false
   organization: "Hearsay A Cappella"
   term: "May 2025 - Present"
   image: "music.svg"
@@ -114,6 +120,7 @@
   title: "Alumni Chair"
   type: "leadership"
   current: true
+  has_page: false
   organization: "Cornell Hearsay A Cappella"
   term: "May 2026 - Present"
   image: "music.svg"
@@ -124,6 +131,7 @@
   title: "A Physicist Is... Profile Writer and Interviewer"
   type: "leadership"
   current: true
+  has_page: true
   organization: "Cornell University, Department of Physics"
   term: "Jan 2025 - Present"
   image: "music.svg"
@@ -134,6 +142,7 @@
   title: "Undergraduate Liaison"
   type: "leadership"
   current: true
+  has_page: false
   organization: "Cornell Physics Community Committee"
   term: "Feb 2024 - Present"
   image: "music.svg"
@@ -144,6 +153,7 @@
   title: "Women and Gender Minorities in Physics and Related Fields (WiP+) Chair"
   type: "leadership"
   current: false
+  has_page: false
   organization: "Cornell Society of Physics Students"
   term: "Feb 2024 - Dec 2024"
   image: "past-role1.svg"
@@ -154,6 +164,7 @@
   title: "Social Chair"
   type: "leadership"
   current: false
+  has_page: false
   organization: "Hearsay A Cappella"
   term: "May 2024 - Dec 2024"
   image: "past-role2.svg"
@@ -164,6 +175,7 @@
   title: "Vice President"
   type: "leadership"
   current: false
+  has_page: false
   organization: "Cornell Society of Physics Students"
   term: "Dec 2024 - Dec 2025"
   image: "past-role1.svg"
