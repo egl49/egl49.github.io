@@ -9,7 +9,7 @@
   organization: "Cornell University"
   supervisor: "Physics Department Faculty"
   term: "Academic Year Role"
-  image: "physics.svg"
+  image: ""
   description: "Facilitated student learning and collaborative problem-solving in undergraduate physics courses at Cornell. Led active-learning recitations, held office hours to clarify core conceptual frameworks, and supported peers in mastering foundational mathematical and physical tools."
   skills: ["Physics Education", "Public Speaking", "Mentorship", "Classroom Leadership", "Teaching", "Science Communication", "Communication", "Peer Mentoring", "Team Leadership"]
 
@@ -20,7 +20,7 @@
   organization: "Cornell University"
   supervisor: "Society of Physics Students"
   term: "Continuous"
-  image: "peer-led.svg"
+  image: ""
   description: "Provided guidance on course selection, lab workflows, and technical skill development (such as Python and LaTeX) for underclassmen in the department, helping foster an inclusive and accessible environment for incoming physics and astronomy students."
   skills: ["Mentorship", "Peer Mentoring", "Youth Mentoring", "Communication", "Community Outreach"]
 
