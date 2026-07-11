@@ -58,13 +58,13 @@
 
 - id: "cornell-academic"
   title: "Academic Coursework & General Skills"
-  type: "research"
+  type: "hidden"
   organization: "Cornell University"
   advisor: "Department of Physics"
   term: "Ongoing Portfolio"
   image: ""
   description: "Core physical schemas and structural mechanics mastered across upper-level physics modules, advanced analytical formulations, and mathematical frameworks."
-  skills: ["LaTeX", "Applied Physics", "Particle Physics", "Experimental Physics", "Mathematics", "Applied Mathematics", "Physical Sciences", "French"]
+  skills: ["LaTeX", "Applied Physics", "Particle Physics", "Experimental Physics", "Mathematics", "Applied Mathematics", "Physical Sciences", "French (B2 Fluency)"]
 
 # ==========================================
 # LEADERSHIP & OUTREACH EXPERIENCES
