@@ -9,8 +9,30 @@
   </div>
   {% endif %}
 
-  <div class="text-justify" style="margin-bottom: 15px; padding-right: 100px;">
-    {{ reference | remove: '<div' | remove: '</div>' | strip_html | prepend: '<div>' | append: '</div>' }}
+  <div class="text-justify" style="margin-bottom: 15px; padding-right: 100px; line-height: 1.6;">
+    {% if entry.author %}
+      <strong>{{ entry.author | replace: ' and ', ', ' | replace: ' & ', ', ' }}</strong>
+    {% endif %}
+    
+    {% if entry.year %}
+      ({{ entry.year }})
+    {% endif %}
+    
+    {% if entry.title %}
+      <em>{{ entry.title }}</em>.
+    {% endif %}
+    
+    {% if entry.booktitle %}
+      <em>{{ entry.booktitle }}</em>.
+    {% endif %}
+    
+    {% if entry.journal %}
+      <em>{{ entry.journal }}</em>.
+    {% endif %}
+    
+    {% if entry.note %}
+      {{ entry.note }}.
+    {% endif %}
   </div>
 
   {% assign bibtest = false %}
