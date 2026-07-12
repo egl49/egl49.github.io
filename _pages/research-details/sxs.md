@@ -53,6 +53,8 @@ I am also investigating the tidal deformability factor of simulated neutron star
 ## Appendix: Fluid Dynamics & Equation of State Framework
 
 ### 1. Variables
+* **$u = r^2$ **
+* **$v = \frac{m}{r}$ **
 * **Mass Density ($\rho$)**
 * **Pressure ($p$)**
 * **Specific Internal Energy Density ($\epsilon$)**
@@ -65,6 +67,7 @@ I am also investigating the tidal deformability factor of simulated neutron star
 ### 2. Polytropic Relations
 Using adiabatic index $\Gamma$ and coefficient $K$:
 
+####Specific Internal Energy Density
 $$\epsilon = \frac{K \rho^{\Gamma-1}}{\Gamma - 1} = \frac{p}{(\Gamma - 1)\rho}$$
 
 #### Total Energy Density
@@ -79,7 +82,7 @@ $$\rho = \left[ \frac{\Gamma - 1}{\Gamma K} (h - 1) \right]^{\frac{1}{\Gamma - 1
 ---
 
 ### 3. Scaling Approximations
-Given the structural parameters defined as $u := r^2$ and $v := \frac{m}{r}$, the volumetric mass-energy scaling profile reduces to:
+We can also perform a volume approximation along the lines of: 
 
 $$\begin{aligned}
 v &\approx \frac{4}{3}\pi u e \\[1ex]
