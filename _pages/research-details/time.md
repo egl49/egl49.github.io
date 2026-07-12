@@ -4,7 +4,8 @@ layout: page
 permalink: /research/tomographic-ionized-carbon-intensity-mapping-experiment/
 mathjax: true
 ---
-The Tomographic Ionized Carbon Intensity Mapping Experiment (TIME)  works to deepen our understanding of the Epoch of Reionization, the era the Universe entered about a billion years after the Big Bang. To study this period, TIME uses a large instrument that can cool arrays of small, superconducting photon detectors to 250 mK. These detectors then observe CII emission at a wavelength of 157.7 micrometers. More information about the design, fabrication, and deployment of TIME can be found in<a href="https://thesis.caltech.edu/13683/” target="_blank">Jon Hunacek’s 2020 Dissertation</a>.
+
+The Tomographic Ionized Carbon Intensity Mapping Experiment (TIME) works to deepen our understanding of the Epoch of Reionization, the era the Universe entered about a billion years after the Big Bang. To study this period, TIME uses a large instrument that can cool arrays of small, superconducting photon detectors to 250 mK. These detectors then observe CII emission at a wavelength of 157.7 micrometers. More information about the design, fabrication, and deployment of TIME can be found in <a href="https://thesis.caltech.edu/13683/" target="_blank">Jon Hunacek’s 2020 Dissertation</a>.
 
 The detectors must be heated to a characteristic temperature, 450-700 mK, which differs for each due to manufacturing inconsistencies. Since the cryostat’s lowest level reaches 250 mK, all columns of the detectors are placed on a parallel circuit, with each detector within a column in series, and the current passed through the circuit is proportional to the power across each detector, and therefore the heat that will raise the temperature of the detector to the transition. Due to this setup, each column of detectors must receive the same current, even if the optimal transition temperature of each detector varies wildly. I wrote calibration code using Python to determine the optimal current level for each column on the detector arrays, that being the current level that would allow for the most detectors to function properly. I specifically used a kernel density estimation and a chi-square reduction to find the optimal current, then applied this current to the arrays during cooldown testing. 
 
@@ -100,7 +101,7 @@ A bias-finder plot, which shows all detector curves on a given column, and the o
 
 <div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
 <div style="width: 100%; height: 200px; overflow: hidden;">
-<a href="#img6-lightbox"><img src="{{ site.baseurl }}/images/research/kde_plot.png" alt="kde plot" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+<a href="#img6-lightbox"><img src="{{ site.baseurl }}/images/research/kde_plot.jpg" alt="kde plot" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
 </div>
 <div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
 A combination plot that features a rug plot with optimal transitions for all individual detectors on a column, overlayed with a kernel density estimation that denotes the bias current with the highest overlap. The peak of this KDE distribution is the bias current that is passed along that specific detector column.
@@ -109,14 +110,14 @@ A combination plot that features a rug plot with optimal transitions for all ind
 <div id="img6-lightbox" class="lightbox-overlay">
 <a href="#_" class="lightbox-close-bg"></a>
 <div class="lightbox-content">
-<img src="{{ site.baseurl }}/images/research/kde_plot.png" alt="kde plot">
+<img src="{{ site.baseurl }}/images/research/kde_plot.jpg" alt="kde plot">
 <a href="#_" class="lightbox-close-btn">&times;</a>
 </div>
 </div>
 
 <div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
 <div style="width: 100%; height: 200px; overflow: hidden;">
-<a href="#img7-lightbox"><img src="{{ site.baseurl }}/images/research/circuit_diagram2.png" alt="column circuit diagram" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+<a href="#img7-lightbox"><img src="{{ site.baseurl }}/images/research/circuit_diagram2.jpg" alt="column circuit diagram" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
 </div>
 <div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
 A circuit diagram detailing the wiring setup for each column of the detector arrays.
@@ -125,7 +126,7 @@ A circuit diagram detailing the wiring setup for each column of the detector arr
 <div id="img7-lightbox" class="lightbox-overlay">
 <a href="#_" class="lightbox-close-bg"></a>
 <div class="lightbox-content">
-<img src="{{ site.baseurl }}/images/research/circuit_diagram2.png" alt="column circuit diagram">
+<img src="{{ site.baseurl }}/images/research/circuit_diagram2.jpg" alt="column circuit diagram">
 <a href="#_" class="lightbox-close-btn">&times;</a>
 </div>
 </div>
