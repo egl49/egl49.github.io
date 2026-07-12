@@ -79,28 +79,24 @@ permalink: /allskills/
 </div>
 
 <style>
-  details summary::-webkit-details-marker {
-    display: none;
-  }
-  details[open] summary span span {
-    transform: rotate(90deg) !important;
-  }
+  details summary::-webkit-details-marker { display: none; }
+  details[open] summary span span { transform: rotate(90deg) !important; }
   
-  /* Light theme baseline defaults */
-  .skill-details-wrapper { background: #fff; }
-  .skill-count-badge { background: #f5f5f5; color: #888; }
-  .skill-dropdown-body { background: #fafafa; }
-  .skill-position-row { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-  .skill-type-tag { background: #eee; color: #555; }
-  details:hover { border-color: #c9bcf2; }
+  /* --- LIGHT MODE --- */
+  .skill-details-wrapper { background: #ffffff !important; }
+  .skill-count-badge { background: #f5f5f5 !important; color: #888 !important; }
+  .skill-dropdown-body { background: #fafafa !important; }
+  .skill-position-row { background: #ffffff !important; }
+  .skill-type-tag { background: #eee !important; color: #555 !important; }
+  details:hover { border-color: #c9bcf2 !important; }
 
-  /* Dark theme overrides using your framework attributes */
-  html[data-theme='dark'] .skill-details-wrapper { background: #1e1e1f; }
-  html[data-theme='dark'] .skill-count-badge { background: #2e2e30; color: #bbb; }
-  html[data-theme='dark'] .skill-dropdown-body { background: #171718; }
-  html[data-theme='dark'] .skill-position-row { background: #222224; }
-  html[data-theme='dark'] .skill-type-tag { background: #333; color: #ccc; }
-  html[data-theme='dark'] details:hover { border-color: #733BEB; }
+  /* --- DARK MODE --- */
+  body.dark-theme .skill-details-wrapper { background: #1e1e1f !important; border-color: #333 !important; }
+  body.dark-theme .skill-count-badge { background: #2e2e30 !important; color: #bbb !important; }
+  body.dark-theme .skill-dropdown-body { background: #171718 !important; border-top-color: #333 !important; }
+  body.dark-theme .skill-position-row { background: #222224 !important; border-color: #333 !important; }
+  body.dark-theme .skill-type-tag { background: #333 !important; color: #ccc !important; }
+  body.dark-theme details:hover { border-color: #733BEB !important; }
 </style>
 
 {::options parse_block_html="true" /}
