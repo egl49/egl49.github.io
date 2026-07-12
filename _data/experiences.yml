@@ -29,32 +29,32 @@
 # ==========================================
 
 - id: "simulating-extreme-spacetimes"
-  title: "Research Assistant, Simulating eXtreme Spacetimes"
+  title: "Numerical Relativity of Neutron Star Binaries"
   type: "research"
-  organization: "Cornell University"
-  advisor: "Numerical Relativity Group Faculty"
+  organization: "Simulating eXtreme Spacetimes (SXS)"
+  advisor: "Prof. Nils Deppe"
   term: "Aug 2025 - Present"
-  image: "neutron-stars.svg"
+  image: ""
   description: "Investigating compact object mergers and high-energy astrophysical dynamics using spectral numerical relativity infrastructures to model equations of state."
   skills: ["Python", "C++", "Numerical Relativity", "SpECTRE", "Data Analysis", "Computational Physics", "General Relativity", "Fluid Dynamics", "Relativity", "Theoretical Physics"]
 
 - id: "yerkes-observatory"
-  title: "Undergraduate Research Intern, Yerkes Observatory"
+  title: "Observational/Historical Astronomy of Nebular Growth"
   type: "research"
   organization: "Yerkes Observatory"
-  advisor: "Archival Research Staff"
+  advisor: "Dr. Amanda Bauer"
   term: "May 2025 - Aug 2025"
-  image: "nebula.svg"
+  image: "color_dumbbell.jpeg"
   description: "Analyzing long-baseline astronomical data baselines and photographic plate archives to track nebular variations and historical stellar profiles."
   skills: ["SAO DS9", "AstrolmageJ", "Siril", "Observational Astronomy", "Astrophysics", "Telescope", "Image Analysis", "Digital Imaging", "Big Data", "Historical Research", "Historic Preservation", "Data Analysis", "Research Skills"]
 
 - id: "time-cii"
-  title: "Research Assistant, Tomographic Ionized Carbon Intensity Mapping Experiment (TIME)"
+  title: "Observational Cosmology Calibration and Instrumentation"
   type: "research"
-  organization: "Cornell University Astrophysics"
-  advisor: "TIME Experiment Collaboration PIs"
+  organization: "Tomographic Ionized Carbon Intensity Mapping Experiment (TIME)"
+  advisor: "Prof. Abigail Crites"
   term: "Jan 2025 - May 2025"
-  image: "cryo-array.svg"
+  image: "cryo_group_square.jpeg"
   description: "Assisting with instrumentation pipelines, cryogenic test array profiles, and structural telemetry modeling to analyze high-redshift line intensity signals."
   skills: ["Cryogenics", "Electronics", "Cosmology", "Hardware", "Hardware Installation", "Troubleshooting", "Astrophysics", "Telescope"]
 
@@ -79,7 +79,7 @@
   has_page: true
   organization: "Cornell Society of Physics Students"
   term: "Dec 2025 - Present"
-  image: "sps.svg"
+  image: "sps_eboard_photo.JPG"
   description: "Directing departmental operations, community building, and professional development initiatives for the physics undergraduate community. Organizing academic forums, networking events with faculty, and student symposiums."
   skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
 
@@ -90,7 +90,7 @@
   has_page: true
   organization: "AEPxPhysics Formal Committee, Cornell Society of Physics Students and Cornell Applied Engineering Physics Society"
   term: "Aug 2025 - Present"
-  image: "sps.svg"
+  image: "eboard_formal.jpeg"
   description: "Coordinating cross-departmental logistics, venue planning, and student-faculty engagement activities for the annual collaborative formal gala celebration."
   skills: ["Project Management", "Event Planning", "Large Scale Events", "Budget Management", "Communication", "Team Leadership"]
 
@@ -101,7 +101,7 @@
   has_page: false
   organization: "Hearsay A Cappella"
   term: "May 2025 - Present"
-  image: "music.svg"
+  image: "emma_singing.jpeg"
   description: "Leading musical arrangements, running vocal sectionals, and managing high-efficiency rehearsals to prepare the ensemble for campus performances and studio recording sets."
   skills: ["Teaching", "Communication", "Event Planning", "Organizational Leadership", "Team Leadership", "Scheduling"]
 
@@ -112,7 +112,7 @@
   has_page: false
   organization: "Hearsay A Cappella"
   term: "May 2025 - Present"
-  image: "music.svg"
+  image: "hearsay_on_stage.jpeg"
   description: "Designing dynamic visual staging configurations and performance block choreography to enhance ensemble storytelling during live showcases."
   skills: ["Teaching", "Communication", "Event Planning", "Organizational Leadership", "Team Leadership", "Scheduling"]
 
@@ -123,7 +123,7 @@
   has_page: false
   organization: "Cornell Hearsay A Cappella"
   term: "May 2026 - Present"
-  image: "music.svg"
+  image: "hearsay_group_crimson.jpeg"
   description: "Designing dynamic visual staging configurations and performance block choreography to enhance ensemble storytelling during live showcases."
   skills: ["Alumni Relations", "Communication", "Interdepartmental Liaison", "Community Outreach", "Event Planning"]
 
@@ -134,7 +134,7 @@
   has_page: true
   organization: "Cornell University, Department of Physics"
   term: "Jan 2025 - Present"
-  image: "music.svg"
+  image: ""
   description: "Conducting spotlights and interviews with diverse physics scholars to share stories across the academic landscape, broadening perspective and accessibility options within physics."
   skills: ["Interviewing", "Alumni Relations", "Profile Writing", "Communication", "Public Speaking", "Science Communication"]
 
@@ -145,7 +145,7 @@
   has_page: false
   organization: "Cornell Physics Community Committee"
   term: "Feb 2024 - Present"
-  image: "music.svg"
+  image: "cuip.jpeg"
   description: "Collaborating with student, staff, and faculty representatives to formulate institutional frameworks that build supportive academic networks."
   skills: ["Project Management", "Interdepartmental Liaison", "Community Outreach", "Communication", "Organizational Leadership"]
 
@@ -156,7 +156,7 @@
   has_page: false
   organization: "Cornell Society of Physics Students"
   term: "Feb 2024 - Dec 2024"
-  image: "past-role1.svg"
+  image: ""
   description: "Directed advocacy discussion forums, community mentorship networks, and resources tailored to support historically marginalized demographics in physical sciences."
   skills: ["Community Building", "Mentorship", "Event Planning", "Public Speaking", "Social Inclusion", "Gender Equality", "Women's Issues", "Community Outreach", "Communication", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling"]
 
@@ -167,7 +167,7 @@
   has_page: false
   organization: "Hearsay A Cappella"
   term: "May 2024 - Dec 2024"
-  image: "past-role2.svg"
+  image: ""
   description: "Spearheaded internal ensemble team-building events, retreats, and network outreach mixers to support interpersonal cohesion across members."
   skills: ["Event Planning", "Community Building", "Communication", "Budget Management", "Team Leadership"]
 
@@ -178,6 +178,6 @@
   has_page: false
   organization: "Cornell Society of Physics Students"
   term: "Dec 2024 - Dec 2025"
-  image: "past-role1.svg"
+  image: ""
   description: "Managed scheduling, organized local academic forums, and supported coordination of undergraduate event promotion pipelines."
   skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
