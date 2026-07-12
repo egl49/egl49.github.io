@@ -68,16 +68,64 @@ IR source array.
 
 <div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
 <div style="width: 100%; height: 200px; overflow: hidden;">
-<a href="#img3-lightbox"><img src="{{ site.baseurl }}/images/research/ir_array.jpeg" alt="IR array" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+<a href="#img4-lightbox"><img src="{{ site.baseurl }}/images/research/transition_plot.jpg" alt="transition plot" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
 </div>
 <div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
-IR source array. 
+A transition plot for an individual detector. The section of negative slope is the interval on which the bias current should sit to allow for the detector to function normally. 
 </div>
 </div>
-<div id="img3-lightbox" class="lightbox-overlay">
+<div id="img4-lightbox" class="lightbox-overlay">
 <a href="#_" class="lightbox-close-bg"></a>
 <div class="lightbox-content">
-<img src="{{ site.baseurl }}/images/research/ir_array.jpeg" alt="IR array">
+<img src="{{ site.baseurl }}/images/research/transition_plot.jpg" alt="transition plot">
+<a href="#_" class="lightbox-close-btn">&times;</a>
+</div>
+</div>
+
+<div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
+<div style="width: 100%; height: 200px; overflow: hidden;">
+<a href="#img5-lightbox"><img src="{{ site.baseurl }}/images/research/bias_finder_plot.png" alt="bias finder plot" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+</div>
+<div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
+A bias-finder plot, which shows all detector curves on a given column, and the optimal bias current overlapping as a dotted line. 
+</div>
+</div>
+<div id="img5-lightbox" class="lightbox-overlay">
+<a href="#_" class="lightbox-close-bg"></a>
+<div class="lightbox-content">
+<img src="{{ site.baseurl }}/images/research/bias_finder_plot.png" alt="bias finder plot">
+<a href="#_" class="lightbox-close-btn">&times;</a>
+</div>
+</div>
+
+<div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
+<div style="width: 100%; height: 200px; overflow: hidden;">
+<a href="#img6-lightbox"><img src="{{ site.baseurl }}/images/research/kde_plot.png" alt="kde plot" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+</div>
+<div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
+A combination plot that features a rug plot with optimal transitions for all individual detectors on a column, overlayed with a kernel density estimation that denotes the bias current with the highest overlap. The peak of this KDE distribution is the bias current that is passed along that specific detector column.
+</div>
+</div>
+<div id="img6-lightbox" class="lightbox-overlay">
+<a href="#_" class="lightbox-close-bg"></a>
+<div class="lightbox-content">
+<img src="{{ site.baseurl }}/images/research/kde_plot.png" alt="kde plot">
+<a href="#_" class="lightbox-close-btn">&times;</a>
+</div>
+</div>
+
+<div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
+<div style="width: 100%; height: 200px; overflow: hidden;">
+<a href="#img7-lightbox"><img src="{{ site.baseurl }}/images/research/circuit_diagram2.png" alt="column circuit diagram" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+</div>
+<div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
+A circuit diagram detailing the wiring setup for each column of the detector arrays.
+</div>
+</div>
+<div id="img7-lightbox" class="lightbox-overlay">
+<a href="#_" class="lightbox-close-bg"></a>
+<div class="lightbox-content">
+<img src="{{ site.baseurl }}/images/research/circuit_diagram2.png" alt="column circuit diagram">
 <a href="#_" class="lightbox-close-btn">&times;</a>
 </div>
 </div>
