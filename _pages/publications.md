@@ -19,38 +19,32 @@ I am looking to use the SpECTRE code base to compare simulated solutions of neut
 *Selected oral talks and poster presentations given at symposia and national meetings.*
 
 {% bibliography %}
-
 <style>
-  /* Fix layout card wrappers for bibliography items */
-  .bibliography li {
-    background-color: var(--global-card-bg, #1e1e1e) !important;
-    border: 1px solid var(--global-border-color, rgba(255, 255, 255, 0.1)) !important;
-    padding: 24px !important;
-    border-radius: 8px !important;
-    margin-bottom: 20px !important;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-in-out;
-  }
-
-  /* Target text tokens strictly to ensure clear readability against the theme background */
+  /* 1. Remove the forced white card boxes and let them match your dark background */
+  .bibliography .card,
   .bibliography li,
-  .bibliography li .title,
-  .bibliography li .author,
-  .bibliography li .periodical,
-  .bibliography li span:not(.badge) {
-    color: var(--global-text-color, #f5f5f5) !important;
+  .bibliography .row,
+  .bibliography [class*="card-"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 
-  /* Keep core structural labels distinct */
-  .bibliography li abbr {
-    color: var(--global-theme-color, #733BEB) !important;
-    font-weight: bold;
+  /* 2. Bring back full opacity to the text so it isn't invisible/washed out */
+  .bibliography .title,
+  .bibliography .author,
+  .bibliography .periodical,
+  .bibliography span,
+  .bibliography li * {
+    color: var(--global-text-color, #ffffff) !important;
+    opacity: 1 !important;
   }
 
-  /* Retain correct contrast configurations for your custom purple buttons and badges */
-  .bibliography li a.btn,
-  .bibliography li .btn,
-  .bibliography li span.badge {
-    color: #ffffff !important;
+  /* 3. Give each entry a clean, subtle bottom divider line instead of bulky white boxes */
+  .bibliography li {
+    border-bottom: 1px solid var(--global-border-color, rgba(255, 255, 255, 0.1)) !important;
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
 </style>
