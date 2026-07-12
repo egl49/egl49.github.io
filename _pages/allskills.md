@@ -35,40 +35,36 @@ permalink: /allskills/
     {% assign count = parts[0] | plus: 0 %}
     {% assign skill = parts[1] %}
     
-    <!-- The details tag serves as the dropdown wrapper -->
-    <details id="{{ skill | slugify }}" style="background: #fff; border: 1px solid #e1e1e1; border-radius: 8px; margin-bottom: 12px; padding: 0; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.01); transition: border-color 0.2s ease;">
+    <details id="{{ skill | slugify }}" class="skill-details-wrapper" style="border: 1px solid var(--global-border-color, #e1e1e1); border-radius: 8px; margin-bottom: 12px; padding: 0; overflow: hidden; transition: border-color 0.2s ease;">
       
-      <!-- The summary tag is the visible header you click on -->
-      <summary style="padding: 16px 20px; font-size: 1.1em; font-weight: 600; color: #333; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; outline: none; user-select: none;">
+      <summary style="padding: 16px 20px; font-size: 1.1em; font-weight: 600; color: inherit; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; outline: none; user-select: none;">
         <span style="display: inline-flex; align-items: center; gap: 8px;">
           <span style="color: #733BEB; font-size: 0.8em; transform: rotate(0deg); transition: transform 0.2s ease;">▶</span>
           {{ skill }}
         </span>
-        <span style="font-size: 0.85em; color: #888; background: #f5f5f5; padding: 2px 10px; border-radius: 12px; font-weight: 500;">
+        <span class="skill-count-badge" style="font-size: 0.85em; padding: 2px 10px; border-radius: 12px; font-weight: 500;">
           {{ count }} {% if count == 1 %}role{% else %}roles{% endif %}
         </span>
       </summary>
 
-      <!-- The hidden dropdown content containing the matched cards -->
-      <div style="padding: 0 20px 20px 20px; background: #fafafa; border-top: 1px solid #f0f0f0; display: grid; gap: 10px;">
-        <p style="font-size: 0.85em; color: #666; margin-top: 15px; margin-bottom: 5px;">Demonstrated in the following positions:</p>
+      <div class="skill-dropdown-body" style="padding: 0 20px 20px 20px; border-top: 1px solid var(--global-border-color, #f0f0f0); display: grid; gap: 10px;">
+        <p style="font-size: 0.85em; opacity: 0.8; margin-top: 15px; margin-bottom: 5px;">Demonstrated in the following positions:</p>
         
         {% for exp in site.data.experiences %}
           {% if exp.skills contains skill %}
-            <div style="background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+            <div class="skill-position-row" style="border: 1px solid var(--global-border-color, #e5e5e5); border-radius: 6px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center;">
               <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
                 <span style="font-size: 0.95em;">
-                  <strong style="color: #111;">{{ exp.title }}</strong>
+                  <strong style="color: inherit;">{{ exp.title }}</strong>
                   {% if exp.organization and exp.organization != "" %}
-                    <span style="color: #666; font-weight: 400;"> — {{ exp.organization }}</span>
+                    <span style="opacity: 0.7; font-weight: 400;"> — {{ exp.organization }}</span>
                   {% endif %}
                 </span>
-                <span style="font-size: 0.75em; padding: 2px 6px; background: #eee; border-radius: 4px; text-transform: uppercase; color: #555; font-weight: 600;">{{ exp.type }}</span>
+                <span class="skill-type-tag" style="font-size: 0.75em; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; font-weight: 600;">{{ exp.type }}</span>
               </div>
               
               {% if exp.type == "miscellaneous" %}
-                <!-- If it's a structural skill set with no parent grid card, show a clean static note or link instead -->
-                <span style="color: #999; font-size: 0.85em; font-style: italic;">General Stack</span>
+                <span style="opacity: 0.5; font-size: 0.85em; font-style: italic;">General Stack</span>
               {% else %}
                 <a href="{{ site.url }}{{ site.baseurl }}/{{ exp.type }}/#{{ exp.id }}" style="color: #733BEB; text-decoration: none; font-size: 0.85em; font-weight: 600; white-space: nowrap;">View Card →</a>
               {% endif %}
@@ -82,7 +78,6 @@ permalink: /allskills/
 
 </div>
 
-<!-- Small inline CSS snippet to hide default browser dropdown arrows and handle smooth rotations -->
 <style>
   details summary::-webkit-details-marker {
     display: none;
@@ -90,9 +85,22 @@ permalink: /allskills/
   details[open] summary span span {
     transform: rotate(90deg) !important;
   }
-  details:hover {
-    border-color: #c9bcf2;
-  }
+  
+  /* Light theme baseline defaults */
+  .skill-details-wrapper { background: #fff; }
+  .skill-count-badge { background: #f5f5f5; color: #888; }
+  .skill-dropdown-body { background: #fafafa; }
+  .skill-position-row { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
+  .skill-type-tag { background: #eee; color: #555; }
+  details:hover { border-color: #c9bcf2; }
+
+  /* Dark theme overrides using your framework attributes */
+  html[data-theme='dark'] .skill-details-wrapper { background: #1e1e1f; }
+  html[data-theme='dark'] .skill-count-badge { background: #2e2e30; color: #bbb; }
+  html[data-theme='dark'] .skill-dropdown-body { background: #171718; }
+  html[data-theme='dark'] .skill-position-row { background: #222224; }
+  html[data-theme='dark'] .skill-type-tag { background: #333; color: #ccc; }
+  html[data-theme='dark'] details:hover { border-color: #733BEB; }
 </style>
 
 {::options parse_block_html="true" /}
