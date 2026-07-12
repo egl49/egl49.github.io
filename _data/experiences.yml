@@ -93,6 +93,27 @@
   image: "eboard_formal.jpeg"
   description: "Coordinating cross-departmental logistics, venue planning, and student-faculty engagement activities for the annual collaborative formal gala celebration."
   skills: ["Project Management", "Event Planning", "Large Scale Events", "Budget Management", "Communication", "Team Leadership"]
+- id: "alumni-interviewer"
+  title: "A Physicist Is... Profile Writer and Interviewer"
+  type: "leadership"
+  current: true
+  has_page: true
+  organization: "Cornell University, Department of Physics"
+  term: "Jan 2025 - Present"
+  image: "Toni.png"
+  description: "Conducting spotlights and interviews with diverse physics scholars to share stories across the academic landscape, broadening perspective and accessibility options within physics."
+  skills: ["Interviewing", "Alumni Relations", "Profile Writing", "Communication", "Public Speaking", "Science Communication"]
+
+- id: "community-committee"
+  title: "Undergraduate Liaison"
+  type: "leadership"
+  current: true
+  has_page: false
+  organization: "Cornell Physics Community Committee"
+  term: "Feb 2024 - Present"
+  image: "cuip.jpeg"
+  description: "Collaborating with student, staff, and faculty representatives to formulate institutional frameworks that build supportive academic networks."
+  skills: ["Project Management", "Interdepartmental Liaison", "Community Outreach", "Communication", "Organizational Leadership"]
 
 - id: "hearsay-acappella-amd"
   title: "Assistant Music Director"
@@ -127,27 +148,16 @@
   description: "Designing dynamic visual staging configurations and performance block choreography to enhance ensemble storytelling during live showcases."
   skills: ["Alumni Relations", "Communication", "Interdepartmental Liaison", "Community Outreach", "Event Planning"]
 
-- id: "alumni-interviewer"
-  title: "A Physicist Is... Profile Writer and Interviewer"
+- id: "sps-vice-president"
+  title: "Vice President"
   type: "leadership"
-  current: true
-  has_page: true
-  organization: "Cornell University, Department of Physics"
-  term: "Jan 2025 - Present"
-  image: "Toni.png"
-  description: "Conducting spotlights and interviews with diverse physics scholars to share stories across the academic landscape, broadening perspective and accessibility options within physics."
-  skills: ["Interviewing", "Alumni Relations", "Profile Writing", "Communication", "Public Speaking", "Science Communication"]
-
-- id: "community-committee"
-  title: "Undergraduate Liaison"
-  type: "leadership"
-  current: true
+  current: false
   has_page: false
-  organization: "Cornell Physics Community Committee"
-  term: "Feb 2024 - Present"
-  image: "cuip.jpeg"
-  description: "Collaborating with student, staff, and faculty representatives to formulate institutional frameworks that build supportive academic networks."
-  skills: ["Project Management", "Interdepartmental Liaison", "Community Outreach", "Communication", "Organizational Leadership"]
+  organization: "Cornell Society of Physics Students"
+  term: "Dec 2024 - Dec 2025"
+  image: ""
+  description: "Managed scheduling, organized local academic forums, and supported coordination of undergraduate event promotion pipelines."
+  skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
 
 - id: "wip-chair"
   title: "Women and Gender Minorities in Physics and Related Fields (WiP+) Chair"
@@ -171,13 +181,3 @@
   description: "Spearheaded internal ensemble team-building events, retreats, and network outreach mixers to support interpersonal cohesion across members."
   skills: ["Event Planning", "Community Building", "Communication", "Budget Management", "Team Leadership"]
 
-- id: "sps-vice-president"
-  title: "Vice President"
-  type: "leadership"
-  current: false
-  has_page: false
-  organization: "Cornell Society of Physics Students"
-  term: "Dec 2024 - Dec 2025"
-  image: ""
-  description: "Managed scheduling, organized local academic forums, and supported coordination of undergraduate event promotion pipelines."
-  skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
