@@ -56,11 +56,22 @@ permalink: /allskills/
         {% for exp in site.data.experiences %}
           {% if exp.skills contains skill %}
             <div style="background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
-              <div>
-                <strong style="color: #111; font-size: 0.95em;">{{ exp.title }}</strong>
-                <span style="font-size: 0.75em; margin-left: 10px; padding: 2px 6px; background: #eee; border-radius: 4px; text-transform: uppercase; color: #555; font-weight: 600;">{{ exp.type }}</span>
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <span style="font-size: 0.95em;">
+                  <strong style="color: #111;">{{ exp.title }}</strong>
+                  {% if exp.organization and exp.organization != "" %}
+                    <span style="color: #666; font-weight: 400;"> — {{ exp.organization }}</span>
+                  {% endif %}
+                </span>
+                <span style="font-size: 0.75em; padding: 2px 6px; background: #eee; border-radius: 4px; text-transform: uppercase; color: #555; font-weight: 600;">{{ exp.type }}</span>
               </div>
-              <a href="{{ site.url }}{{ site.baseurl }}/{{ exp.type }}/#{{ exp.id }}" style="color: #733BEB; text-decoration: none; font-size: 0.85em; font-weight: 600; white-space: nowrap;">View Card →</a>
+              
+              {% if exp.type == "miscellaneous" %}
+                <!-- If it's a structural skill set with no parent grid card, show a clean static note or link instead -->
+                <span style="color: #999; font-size: 0.85em; font-style: italic;">General Stack</span>
+              {% else %}
+                <a href="{{ site.url }}{{ site.baseurl }}/{{ exp.type }}/#{{ exp.id }}" style="color: #733BEB; text-decoration: none; font-size: 0.85em; font-weight: 600; white-space: nowrap;">View Card →</a>
+              {% endif %}
             </div>
           {% endif %}
         {% endfor %}
