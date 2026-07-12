@@ -19,3 +19,22 @@ I am looking to use the SpECTRE code base to compare simulated solutions of neut
 *Selected oral talks and poster presentations given at symposia and national meetings.*
 
 {% bibliography %}
+
+<style>
+  /* Fixes dark/light mode background swapping on the generated bibliography list cards */
+  .bibliography {
+    background: var(--global-card-bg, rgba(255, 255, 255, 0.03)) !important;
+    border: 1px solid var(--global-border-color, rgba(255, 255, 255, 0.1)) !important;
+    color: var(--global-text-color) !important;
+  }
+  
+  /* Make sure the text color inside the entry stands out nicely across dark/light transitions */
+  .bibliography .title, .bibliography .author, .bibliography .periodical {
+    color: var(--global-text-color) !important;
+  }
+  
+  /* Ensure secondary text adapts cleanly */
+  .bibliography abbr {
+    opacity: 0.95;
+  }
+</style>
