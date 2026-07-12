@@ -72,18 +72,18 @@ v &\approx \frac{4}{3}\pi u e \\[1ex]
 <div class="custom-gallery-scroll" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; -webkit-overflow-scrolling: touch;">
 <div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
 <div style="width: 100%; height: 200px; overflow: hidden;">
-<img src="{{ site.baseurl }}/assets/img/your-image-1.jpg" alt="Description" style="width: 100%; height: 100%; object-fit: cover;">
+<img src="{{ site.baseurl }}/images/research/u_expansion_order.jpeg" alt="Comparison of u expansion orders to legacy solver" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
 <div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
-Caption text describing your research setup, event timeline, or group metrics here.
+A diagnostic plot that shows the convergence of the ODE expansions towards the solution of the solver implemented in the original SpECTRE code.
 </div>
 </div>
 <div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
 <div style="width: 100%; height: 200px; overflow: hidden;">
-<img src="{{ site.baseurl }}/assets/img/your-image-2.jpg" alt="Description" style="width: 100%; height: 100%; object-fit: cover;">
+<img src="{{ site.baseurl }}/images/research/u_residuals.jpeg" alt="Residual u plot" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
 <div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
-Caption text detailing simulation code diagnostics or performance data.
+A diagnostic plot that shows how the difference in u value changes as a function of H for each expansion order compared to the legacy solver.
 </div>
 </div>
 </div>
