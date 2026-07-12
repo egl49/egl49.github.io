@@ -47,7 +47,99 @@
 
   <div class="pub-actions" style="display: flex; gap: 8px; flex-wrap: wrap;">
     {% if bibtest %}
-    <a href="{{ site.url }}{{ site.baseurl]/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">PDF</a>
+    <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">PDF</a>
     {% endif %}
 
     {% if entry.howpublished and entry.howpublished != '' %}
+      {% if entry.howpublished contains '.pdf' %}
+      <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.howpublished }}" target="_blank" class="btn-pill btn-pdf" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">PDF</a>
+      {% elsif entry.howpublished contains 'http' %}
+      <a href="{{ entry.howpublished }}" target="_blank" class="btn-pill btn-link" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">LINK</a>
+      {% endif %}
+    {% endif %}
+
+    {% if entry.url and entry.url != '' %}
+      {% if entry.url contains 'http' %}
+      <a href="{{ entry.url }}" target="_blank" class="btn-pill btn-link" style="background-color: #733BEB; color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; text-decoration: none; font-weight: 500; display: inline-block; border: none; cursor: pointer;">LINK</a>
+      {% endif %}
+    {% endif %}
+
+    {% if entry.type == 'unpublished' or entry.type == 'article' or entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' or entry.type == 'misc' %}
+    <button class="btn-pill btn-bib" onclick="copyBibToClipboard('bib-text-{{ entry.key }}')" style="background-color: var(--global-divider-color, rgba(0,0,0,0.05)); color: var(--global-text-color); padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid var(--global-border-color); cursor: pointer;">BIB</button>
+    {% endif %}
+
+    {% if entry.abstract %}
+    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}" style="background-color: var(--global-divider-color, rgba(0,0,0,0.05)); color: var(--global-text-color); padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid var(--global-border-color); cursor: pointer;">Abstract</button>
+    {% endif %}
+  </div>
+
+  {% if entry.abstract %}
+  <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 15px;">
+    <pre id="bib-text-{{ entry.key }}" style="background: var(--global-code-bg, rgba(0,0,0,0.1)); color: var(--global-text-color); padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid var(--global-border-color); overflow-x: auto;">{{ entry.bibtex | remove: "entry.abstract" }}</pre>
+  </div>
+  {% else %}
+  <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 15px;">
+    <pre id="bib-text-{{ entry.key }}" style="background: var(--global-code-bg, rgba(0,0,0,0.1)); color: var(--global-text-color); padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid var(--global-border-color); overflow-x: auto;">{{ entry.bibtex }}</pre>
+  </div>
+  {% endif %}
+
+  {% if entry.abstract %}
+  <div class="pub-collapse" id="abs-{{ entry.key }}" style="display: none; margin-top: 15px;">
+    <pre style="background: var(--global-code-bg, rgba(0,0,0,0.1)); color: var(--global-text-color); padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid var(--global-border-color); overflow-x: auto; white-space: pre-wrap; word-break: break-word;">{{ entry.abstract }}</pre>
+  </div>
+  {% endif %}
+</div>
+
+<script>
+function copyBibToClipboard(elementId) {
+  const bibText = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(bibText).then(() => {
+    const toast = document.createElement('div');
+    toast.textContent = 'Citation copied to clipboard!';
+    toast.style.cssText = `
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--global-text-color, #333);
+      color: var(--global-bg-color, #fff);
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      animation: slideIn 0.3s ease-out;
+    `;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+      toast.style.animation = 'slideOut 0.3s ease-out';
+      setTimeout(() => toast.remove(), 300);
+    }, 2000);
+  }).catch(() => {
+    alert('Failed to copy to clipboard');
+  });
+}
+</script>
+
+<style>
+  /* Hide the numbers from the jekyll-scholar list container */
+  .bibliography {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* Ensure individual items don't try to generate default counters */
+  .bibliography li {
+    list-style-type: none !important;
+  }
+
+  @keyframes slideIn {
+    from { transform: translateX(400px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes slideOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(400px); opacity: 0; }
+  }
+</style>
