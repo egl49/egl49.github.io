@@ -24,23 +24,20 @@
 {% endif %}
 </div>
 
-<!-- Curated Skills Sidebar Card -->
-<div class="card home-skills-card" style="border: 1px solid var(--global-border-color, #e1e1e1); border-radius: 12px; padding: 24px; margin-top: 20px;">
+<div class="card home-skills-card" style="border: 1px solid var(--global-border-color, #e1e1e1); border-radius: 12px; padding: 24px; margin-top: 20px; transition: all 0.2s ease;">
   <h3 class="skills-heading" style="margin-top: 0; margin-bottom: 18px; font-size: 1.2em; font-weight: 700;">Skills Focus</h3>
 
-  <!-- Hard Skills Section -->
   <div style="margin-bottom: 20px;">
-    <h4 style="margin: 0 0 10px 0; font-size: 0.9em; font-weight: 700; color: #733BEB; text-transform: uppercase; letter-spacing: 0.5px;">Technical Stack</h4>
+    <h4 class="tech-skills-title" style="margin: 0 0 10px 0; font-size: 0.9em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Technical Stack</h4>
     <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-      <span class="tech-badge" style="color: #733BEB; font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">Python</span>
-      <span class="tech-badge" style="color: #733BEB; font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">C++</span>
-      <span class="tech-badge" style="color: #733BEB; font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">Numerical Relativity</span>
-      <span class="tech-badge" style="color: #733BEB; font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">Data Analysis</span>
-      <span class="tech-badge" style="color: #733BEB; font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">LaTeX</span>
+      <span class="tech-badge" style="font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">Python</span>
+      <span class="tech-badge" style="font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">C++</span>
+      <span class="tech-badge" style="font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">Numerical Relativity</span>
+      <span class="tech-badge" style="font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">Data Analysis</span>
+      <span class="tech-badge" style="font-size: 0.85em; font-weight: 600; padding: 6px 12px; border-radius: 20px;">LaTeX</span>
     </div>
   </div>
 
-  <!-- Soft Skills Section -->
   <div style="margin-bottom: 5px;">
     <h4 class="soft-skills-title" style="margin: 0 0 10px 0; font-size: 0.9em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Leadership & Impact</h4>
     <div style="display: flex; flex-wrap: wrap; gap: 6px;">
@@ -50,8 +47,7 @@
     </div>
   </div>
 
-  <!-- Link to interactive directory -->
-  <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--global-border-color, #f0f0f0);">
+  <div class="skills-card-footer" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #f0f0f0;">
     <a href="{{ site.url }}{{ site.baseurl }}/allskills/" style="color: #733BEB; text-decoration: none; font-weight: 600; font-size: 0.9em; display: inline-flex; align-items: center;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
       Explore full skills matrix →
     </a>
@@ -73,18 +69,24 @@
 
 
 
+
+
 <style>
   /* --- LIGHT MODE --- */
   .home-skills-card { background: #ffffff !important; box-shadow: 0 4px 12px rgba(0,0,0,0.02) !important; }
-  .skills-heading { color: #111 !important; }
-  .tech-badge { background: #f3f0fc !important; }
-  .soft-skills-title { color: #555 !important; }
-  .soft-badge { background: #f5f5f5 !important; color: #444 !important; }
+  .skills-heading { color: #111111 !important; }
+  .tech-skills-title { color: #733BEB !important; }
+  .tech-badge { background: #f3f0fc !important; color: #733BEB !important; }
+  .soft-skills-title { color: #555555 !important; }
+  .soft-badge { background: #f5f5f5 !important; color: #444444 !important; }
+  .skills-card-footer { border-top-color: #f0f0f0 !important; }
 
-  /* --- DARK MODE --- */
-  body.dark-theme .home-skills-card { background: #1e1e1f !important; box-shadow: none !important; border-color: #333 !important; }
-  body.dark-theme .skills-heading { color: #ffffff !important; }
-  body.dark-theme .tech-badge { background: rgba(115, 59, 235, 0.2) !important; color: #a385ff !important; }
-  body.dark-theme .soft-skills-title { color: #aaa !important; }
-  body.dark-theme .soft-badge { background: #2e2e30 !important; color: #ddd !important; }
+  /* --- DARK MODE SELECTORS --- */
+  html[data-theme='dark'] .home-skills-card, html[theme='dark'] .home-skills-card { background: #1e1e1f !important; box-shadow: none !important; border-color: #333335 !important; }
+  html[data-theme='dark'] .skills-heading, html[theme='dark'] .skills-heading { color: #ffffff !important; }
+  html[data-theme='dark'] .tech-skills-title, html[theme='dark'] .tech-skills-title { color: #a385ff !important; }
+  html[data-theme='dark'] .tech-badge, html[theme='dark'] .tech-badge { background: rgba(115, 59, 235, 0.2) !important; color: #a385ff !important; }
+  html[data-theme='dark'] .soft-skills-title, html[theme='dark'] .soft-skills-title { color: #aaaaaa !important; }
+  html[data-theme='dark'] .soft-badge, html[theme='dark'] .soft-badge { background: #2e2e30 !important; color: #dddddd !important; }
+  html[data-theme='dark'] .skills-card-footer, html[theme='dark'] .skills-card-footer { border-top-color: #333335 !important; }
 </style>
