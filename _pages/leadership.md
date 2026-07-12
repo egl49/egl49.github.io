@@ -21,7 +21,7 @@ permalink: /leadership/
         <div id="{{ exp.id }}" style="display: flex; flex-direction: column;">
       {% endif %}
         
-        <div class="section-card" style="{% if exp.has_page == true %}cursor: pointer;{% else %}cursor: default;{% endif %} overflow: hidden; display: flex; flex-direction: column; height: 100%; padding: 0; box-shadow: none; transition: transform 0.2s ease-in-out;" {% if exp.has_page == true %}onmouseover="this.style.transform='scale(1.015)';" onmouseout="this.style.transform='scale(1)';"终{% endif %}>
+        <div class="section-card" style="{% if exp.has_page == true %}cursor: pointer;{% else %}cursor: default;{% endif %} overflow: hidden; display: flex; flex-direction: column; height: 100%; padding: 0; box-shadow: none; transition: transform 0.2s ease-in-out;" {% if exp.has_page == true %}onmouseover="this.style.transform='scale(1.015)';" onmouseout="this.style.transform='scale(1)';" {% endif %}>
           
           {% if exp.image and exp.image != "" %}
             <div class="card-image-wrapper" style="width: 100%; height: 160px; overflow: hidden; border-bottom: 1px solid var(--global-border-color); background: rgba(0,0,0,0.05);">
@@ -91,7 +91,7 @@ permalink: /leadership/
         <div id="{{ exp.id }}" style="display: flex; flex-direction: column;">
       {% endif %}
         
-        <div class="section-card" style="{% if exp.has_page == true %}cursor: pointer;{% else %}cursor: default;{% endif %} border-style: dashed !important; border-color: #733BEB !important; border-width: 2px !important; overflow: hidden; display: flex; flex-direction: column; height: 100%; padding: 0; box-shadow: none; transition: transform 0.2s ease-in-out;" {% if exp.has_page == true %}onmouseover="this.style.transform='scale(1.015)';" onmouseout="this.style.transform='scale(1)';"终{% endif %}>
+        <div class="section-card" style="{% if exp.has_page == true %}cursor: pointer;{% else %}cursor: default;{% endif %} border-style: dashed !important; border-color: #733BEB !important; border-width: 2px !important; overflow: hidden; display: flex; flex-direction: column; height: 100%; padding: 0; box-shadow: none; transition: transform 0.2s ease-in-out;" {% if exp.has_page == true %}onmouseover="this.style.transform='scale(1.015)';" onmouseout="this.style.transform='scale(1)';" {% endif %}>
           
           {% if exp.image and exp.image != "" %}
             <div class="card-image-wrapper" style="width: 100%; height: 160px; overflow: hidden; border-bottom: 2px dashed #733BEB; background: rgba(0,0,0,0.05);">
