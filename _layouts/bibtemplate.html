@@ -120,7 +120,17 @@ function copyBibToClipboard(elementId) {
   });
 }
 </script>
+/* Hide the numbers from the jekyll-scholar list container */
+.bibliography {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
 
+/* Ensure individual items don't try to generate default counters */
+.bibliography li {
+  list-style-type: none !important;
+}
 <style>
 @keyframes slideIn {
   from { transform: translateX(400px); opacity: 0; }
