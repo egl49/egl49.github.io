@@ -1,5 +1,5 @@
 ---
-title: "Numerical Relativity & Compact Objects"
+title: "Numerical Relativity of Neutron Star Binaries"
 layout: page
 permalink: /research/simulating-extreme-spacetimes/
 mathjax: true
