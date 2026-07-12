@@ -71,19 +71,20 @@
 <p style="margin-top: var(--space-4);"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">See all news &rarr;</a></p>
 </div>
 
-<!-- Extra template adaptive styling overrides -->
-<style>
-  /* Baseline Light Theme settings */
-  .home-skills-card { background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
-  .skills-heading { color: #111; }
-  .tech-badge { background: #f3f0fc; }
-  .soft-skills-title { color: #555; }
-  .soft-badge { background: #f5f5f5; color: #444; }
 
-  /* Adaptive Dark Theme settings */
-  html[data-theme='dark'] .home-skills-card { background: var(--global-card-bg, #1e1e1f); box-shadow: none; }
-  html[data-theme='dark'] .skills-heading { color: #fff; }
-  html[data-theme='dark'] .tech-badge { background: rgba(115, 59, 235, 0.15); }
-  html[data-theme='dark'] .soft-skills-title { color: #aaa; }
-  html[data-theme='dark'] .soft-badge { background: #2e2e30; color: #ddd; }
+
+<style>
+  /* --- LIGHT MODE --- */
+  .home-skills-card { background: #ffffff !important; box-shadow: 0 4px 12px rgba(0,0,0,0.02) !important; }
+  .skills-heading { color: #111 !important; }
+  .tech-badge { background: #f3f0fc !important; }
+  .soft-skills-title { color: #555 !important; }
+  .soft-badge { background: #f5f5f5 !important; color: #444 !important; }
+
+  /* --- DARK MODE --- */
+  body.dark-theme .home-skills-card { background: #1e1e1f !important; box-shadow: none !important; border-color: #333 !important; }
+  body.dark-theme .skills-heading { color: #ffffff !important; }
+  body.dark-theme .tech-badge { background: rgba(115, 59, 235, 0.2) !important; color: #a385ff !important; }
+  body.dark-theme .soft-skills-title { color: #aaa !important; }
+  body.dark-theme .soft-badge { background: #2e2e30 !important; color: #ddd !important; }
 </style>
