@@ -80,7 +80,7 @@
   organization: "Cornell Society of Physics Students"
   term: "Dec 2025 - Present"
   image: "sps_eboard_photo.JPG"
-  description: "Directing departmental operations, community building, and professional development initiatives for the physics undergraduate community. Organizing academic forums, networking events with faculty, and student symposiums."
+  description: "I manage over a dozen events per semester, including speaker events, career panels, socials, mentorship programs, local outreach, the Cornell Physics Wiki, and an annual poster session. I organize the initiatives of the organization, promoting professional development and community through events like grad school panels, career exploration panels, alumni presentations, grad school application workshops, and physics skill workshops."
   skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
 
 - id: "formal-committee"
@@ -91,7 +91,8 @@
   organization: "AEPxPhysics Formal Committee, Cornell Society of Physics Students and Cornell Applied Engineering Physics Society"
   term: "Aug 2025 - Present"
   image: "eboard_formal.jpeg"
-  description: "Coordinating cross-departmental logistics, venue planning, and student-faculty engagement activities for the annual collaborative formal gala celebration."
+  description: "Every year, I form a committee made up of executive members from all of Cornell’s physics organizations. I oversee the committee, and book all major venues and vendors for the event. I also handle all of the advertising, and I am responsible for approving the budget alongside our treasurers. 
+"
   skills: ["Project Management", "Event Planning", "Large Scale Events", "Budget Management", "Communication", "Team Leadership"]
 - id: "alumni-interviewer"
   title: "A Physicist Is... Profile Writer and Interviewer"
@@ -101,7 +102,7 @@
   organization: "Cornell University, Department of Physics"
   term: "Jan 2025 - Present"
   image: "Toni.png"
-  description: "Conducting spotlights and interviews with diverse physics scholars to share stories across the academic landscape, broadening perspective and accessibility options within physics."
+  description: "I work with faculty in the Cornell Physics Department to find alumni in varying fields to feature for the "A Physicist Is..." Spotlight project. I conduct 30 minute online interviews with three alumni per semester and write a short profile on their career trajectory to be displayed on posters around the department and on the department website."
   skills: ["Interviewing", "Alumni Relations", "Profile Writing", "Communication", "Public Speaking", "Science Communication"]
 
 - id: "community-committee"
@@ -112,7 +113,7 @@
   organization: "Cornell Physics Community Committee"
   term: "Feb 2024 - Present"
   image: "cuip.jpeg"
-  description: "Collaborating with student, staff, and faculty representatives to formulate institutional frameworks that build supportive academic networks."
+  description: "I serve as a student-faculty liaison to facilitate community-building initiatives in the physics department and advocate for undergraduate issues."
   skills: ["Project Management", "Interdepartmental Liaison", "Community Outreach", "Communication", "Organizational Leadership"]
 
 - id: "hearsay-acappella-amd"
@@ -123,7 +124,7 @@
   organization: "Hearsay A Cappella"
   term: "May 2025 - Present"
   image: "emma_singing.jpeg"
-  description: "Leading musical arrangements, running vocal sectionals, and managing high-efficiency rehearsals to prepare the ensemble for campus performances and studio recording sets."
+  description: "I arrange multiple pieces for performance and lead rehearsals each week for a 15-member group. I assist our main music director with leading warm-ups, teaching music, and giving performance feedback."
   skills: ["Teaching", "Communication", "Event Planning", "Organizational Leadership", "Team Leadership", "Scheduling"]
 
 - id: "hearsay-acappella-choreo"
@@ -134,7 +135,7 @@
   organization: "Hearsay A Cappella"
   term: "May 2025 - Present"
   image: "hearsay_on_stage.jpeg"
-  description: "Designing dynamic visual staging configurations and performance block choreography to enhance ensemble storytelling during live showcases."
+  description: "I design choreography for every song in our set-list alongside my co-choreographer, and I lead all dancing-focused rehearsals. I film every practice run of the show and write individualized notes for every member to improve their performance."
   skills: ["Teaching", "Communication", "Event Planning", "Organizational Leadership", "Team Leadership", "Scheduling"]
 
 - id: "hearsay-acappella-alumni"
@@ -145,7 +146,7 @@
   organization: "Hearsay A Cappella"
   term: "May 2026 - Present"
   image: "hearsay_group_crimson.jpeg"
-  description: "Designing dynamic visual staging configurations and performance block choreography to enhance ensemble storytelling during live showcases."
+  description: "I keep in constant contact with past Hearsay members so that they can attend our concerts each semester."
   skills: ["Alumni Relations", "Communication", "Interdepartmental Liaison", "Community Outreach", "Event Planning"]
 
 - id: "sps-vice-president"
@@ -156,7 +157,7 @@
   organization: "Cornell Society of Physics Students"
   term: "Dec 2024 - Dec 2025"
   image: ""
-  description: "Managed scheduling, organized local academic forums, and supported coordination of undergraduate event promotion pipelines."
+  description: "I worked closely with the President to manage our other E-Board members and plan events for our general membership. I organize the peer and grad mentorship programs offered by SPS and I maintain consistent contact with the Physics Graduate Society. I plan three professor Q&A sessions for our members each semester and I host an end-of-semester departmental movie night at the end of spring each year. "
   skills: ["Project Management", "Public Speaking", "Community Building", "Leadership", "Website Project Management", "Social Media Marketing", "Budget Management", "Interdepartmental Liaison", "Community Outreach", "Youth Mentoring", "Event Planning", "Communication", "Large Scale Events", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling", "Science Communication"]
 
 - id: "wip-chair"
@@ -167,7 +168,7 @@
   organization: "Cornell Society of Physics Students"
   term: "Feb 2024 - Dec 2024"
   image: ""
-  description: "Directed advocacy discussion forums, community mentorship networks, and resources tailored to support historically marginalized demographics in physical sciences."
+  description: "I worked closely with the WiP+ organization on campus to plan inclusive events for the women in our field. I organize socials and informational sessions, and maintain contact with the management for WiP+. I also assisted with bi-weekly WiP+ coffee hour."
   skills: ["Community Building", "Mentorship", "Event Planning", "Public Speaking", "Social Inclusion", "Gender Equality", "Women's Issues", "Community Outreach", "Communication", "Organizational Leadership", "Team Leadership", "Peer Mentoring", "Scheduling"]
 
 - id: "hearsay-acappella-social"
@@ -178,6 +179,6 @@
   organization: "Hearsay A Cappella"
   term: "May 2024 - Dec 2024"
   image: ""
-  description: "Spearheaded internal ensemble team-building events, retreats, and network outreach mixers to support interpersonal cohesion across members."
+  description: "I planned multiple social events per semester, including our big-little program and our post-concert celebration. "
   skills: ["Event Planning", "Community Building", "Communication", "Budget Management", "Team Leadership"]
 
