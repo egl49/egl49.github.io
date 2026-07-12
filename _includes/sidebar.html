@@ -24,9 +24,11 @@
 {% endif %}
 </div>
 
-<div class="card home-skills-card" style="border: 1px solid var(--global-border-color); border-radius: 12px; padding: 24px; margin-top: 20px; background-color: var(--global-card-bg, var(--global-bg-color)); color: var(--global-text-color);">
+<!-- Curated Skills Sidebar Card -->
+<div class="card home-skills-card" style="border: 1px solid var(--global-border-color); border-radius: 12px; padding: 24px; margin-top: 20px; background-color: var(--global-card-bg); color: var(--global-text-color); box-shadow: none;">
   <h3 class="skills-heading" style="margin-top: 0; margin-bottom: 18px; font-size: 1.2em; font-weight: 700; color: var(--global-text-color);">Skills Focus</h3>
 
+  <!-- Hard Skills Section -->
   <div style="margin-bottom: 20px;">
     <h4 style="margin: 0 0 10px 0; font-size: 0.9em; font-weight: 700; color: #733BEB; text-transform: uppercase; letter-spacing: 0.5px;">Technical Stack</h4>
     <div style="display: flex; flex-wrap: wrap; gap: 6px;">
@@ -38,15 +40,17 @@
     </div>
   </div>
 
+  <!-- Soft Skills Section -->
   <div style="margin-bottom: 5px;">
     <h4 class="soft-skills-title" style="margin: 0 0 10px 0; font-size: 0.9em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary, inherit); opacity: 0.9;">Leadership & Impact</h4>
     <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-      <span class="soft-badge" style="font-size: 0.85em; font-weight: 500; padding: 6px 12px; border-radius: 20px; background-color: var(--global-divider-color, rgba(0,0,0,0.05)); color: var(--global-text-color);">Project Management</span>
-      <span class="soft-badge" style="font-size: 0.85em; font-weight: 500; padding: 6px 12px; border-radius: 20px; background-color: var(--global-divider-color, rgba(0,0,0,0.05)); color: var(--global-text-color);">Science Communication</span>
-      <span class="soft-badge" style="font-size: 0.85em; font-weight: 500; padding: 6px 12px; border-radius: 20px; background-color: var(--global-divider-color, rgba(0,0,0,0.05)); color: var(--global-text-color);">Mentorship</span>
+      <span class="soft-badge" style="font-size: 0.85em; font-weight: 500; padding: 6px 12px; border-radius: 20px; background-color: var(--global-divider-color, rgba(255,255,255,0.05)); color: var(--global-text-color);">Project Management</span>
+      <span class="soft-badge" style="font-size: 0.85em; font-weight: 500; padding: 6px 12px; border-radius: 20px; background-color: var(--global-divider-color, rgba(255,255,255,0.05)); color: var(--global-text-color);">Science Communication</span>
+      <span class="soft-badge" style="font-size: 0.85em; font-weight: 500; padding: 6px 12px; border-radius: 20px; background-color: var(--global-divider-color, rgba(255,255,255,0.05)); color: var(--global-text-color);">Mentorship</span>
     </div>
   </div>
 
+  <!-- Link to interactive directory -->
   <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--global-border-color);">
     <a href="{{ site.url }}{{ site.baseurl }}/allskills/" style="color: #733BEB; text-decoration: none; font-weight: 600; font-size: 0.9em; display: inline-flex; align-items: center;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
       Explore full skills matrix →
