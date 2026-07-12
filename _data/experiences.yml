@@ -10,7 +10,7 @@
   supervisor: "Physics Department Faculty"
   term: "Academic Year Role"
   image: ""
-  description: "Facilitated student learning and collaborative problem-solving in undergraduate physics courses at Cornell. Led active-learning recitations, held office hours to clarify core conceptual frameworks, and supported peers in mastering foundational mathematical and physical tools."
+  description: "I work with students of PHYS 3316: Basics of Quantum Mechanics during set office hours to assist in learning. The students can come to me with any questions regarding homework, exam preparation, or general content questions. I work closely with the course staff to ensure students are on a good learning trajectory, and I received training in teaching and mentorship."
   skills: ["Physics Education", "Public Speaking", "Mentorship", "Classroom Leadership", "Teaching", "Science Communication", "Communication", "Peer Mentoring", "Team Leadership"]
 
 - id: "peer-mentor"
@@ -21,7 +21,7 @@
   supervisor: "Society of Physics Students"
   term: "Continuous"
   image: ""
-  description: "Provided guidance on course selection, lab workflows, and technical skill development (such as Python and LaTeX) for underclassmen in the department, helping foster an inclusive and accessible environment for incoming physics and astronomy students."
+  description: " I provide guidance to seven students on adjusting to college life, navigating the physics major, and anything else they want to talk about. I keep in constant contact with my mentees, and I meet in person with them at least once a month. I also organized the peer and grad mentorship programs for 2025-2026, and I matched over 70 incoming freshmen to over 30 mentors."
   skills: ["Mentorship", "Peer Mentoring", "Youth Mentoring", "Communication", "Community Outreach"]
 
 # ==========================================
@@ -35,7 +35,7 @@
   advisor: "Prof. Nils Deppe"
   term: "Aug 2025 - Present"
   image: ""
-  description: "Investigating compact object mergers and high-energy astrophysical dynamics using spectral numerical relativity infrastructures to model equations of state."
+  description: "I work to implement a modified version of the Tolman–Oppenheimer–Volkoff equations in Python to numerically solve theoretical neutron stars with different equations of state (EOS). I have improved the precision of the simulated solutions by performing a rigorous expansion of the coupled ODE’s near the center of the star, and I am currently working to implement this improvement into the C++ SpECTRE code base. I am also investigating neutron star binary waveforms with degenerate tidal deformability factors, but different internal EOS, which will allow me to determine whether future observatories will have a high enough resolution to tell us anything new about neutron star microphysics. "
   skills: ["Python", "C++", "Numerical Relativity", "SpECTRE", "Data Analysis", "Computational Physics", "General Relativity", "Fluid Dynamics", "Relativity", "Theoretical Physics"]
 
 - id: "yerkes-observatory"
@@ -45,7 +45,8 @@
   advisor: "Dr. Amanda Bauer"
   term: "May 2025 - Aug 2025"
   image: "color_dumbbell.jpeg"
-  description: "Analyzing long-baseline astronomical data baselines and photographic plate archives to track nebular variations and historical stellar profiles."
+  description: "I conducted a study that examined the growth of the Dumbbell Nebula (M27) over a period of 119 years. I digitized historical M27 observations from the Yerkes glass plate collection and created a data reduction and analysis pipeline in Python to compare these plates with observations I took using the CMOS camera attached to the Yerkes 41” Reflector. I utilized several different Python packages and publicly available astronomy software programs to center each image on the central white dwarf and determine the change in M27’s radius over time. 
+"
   skills: ["SAO DS9", "AstrolmageJ", "Siril", "Observational Astronomy", "Astrophysics", "Telescope", "Image Analysis", "Digital Imaging", "Big Data", "Historical Research", "Historic Preservation", "Data Analysis", "Research Skills"]
 
 - id: "time-cii"
@@ -55,8 +56,8 @@
   advisor: "Prof. Abigail Crites"
   term: "Jan 2025 - May 2025"
   image: "cryo_group_square.jpeg"
-  description: "Assisting with instrumentation pipelines, cryogenic test array profiles, and structural telemetry modeling to analyze high-redshift line intensity signals."
-  skills: ["Cryogenics", "Electronics", "Cosmology", "Hardware", "Hardware Installation", "Troubleshooting", "Astrophysics", "Telescope"]
+  description: "I implemented a Python calibration pipeline to maximize the number of viable TES Bolometers (TESB) in the TIME detector array. Each TESB required a specific transition temperature anywhere from 450-700 mK due to manufacturing inconsistencies, so I plotted the resistance curves of each column of detectors to determine the optimal current to pass. I also installed the detectors, tested the wiring of the cryostat, used a crane to assemble and disassemble the instrument, and worked on code to control an IR source array on a motor stepper to generate test observational data. "
+  skills: ["Cryogenics", "Electronics", "Cosmology", "Hardware", "Hardware Installation", "Troubleshooting", "Astrophysics", "Telescope", "Experimental Physics"]
 
 - id: "cornell-academic"
   title: "Academic Coursework & General Skills"
