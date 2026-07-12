@@ -1,7 +1,7 @@
 ---
 ---
 
-<div class="pub-entry" data-pub-searchable style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #fafafa; position: relative;">
+<div class="pub-entry section-card" data-pub-searchable style="border: 1px solid var(--global-border-color); border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); position: relative; box-shadow: none;">
   
   {% if entry.year %}
   <div class="badge-year" style="position: absolute; right: 20px; top: 20px; background-color: #733BEB; color: white; border-radius: 15px; padding: 6px 14px; font-size: 0.75em; font-weight: bold; text-transform: uppercase; white-space: nowrap;">
@@ -9,7 +9,7 @@
   </div>
   {% endif %}
 
-  <div class="text-justify" style="margin-bottom: 15px; padding-right: 100px; line-height: 1.6;">
+  <div class="text-justify" style="margin-bottom: 15px; padding-right: 100px; line-height: 1.6; color: var(--global-text-color);">
     {% if entry.author %}
       <strong>{{ entry.author | replace: ' and ', '; ' | replace: ' & ', '; ' }}</strong>
     {% endif %}
@@ -65,27 +65,27 @@
     {% endif %}
 
     {% if entry.type == 'unpublished' or entry.type == 'article' or entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' or entry.type == 'misc' %}
-    <button class="btn-pill btn-bib" onclick="copyBibToClipboard('bib-text-{{ entry.key }}')" style="background-color: #f1f1f1; color: #333; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid #ddd; cursor: pointer;">BIB</button>
+    <button class="btn-pill btn-bib" onclick="copyBibToClipboard('bib-text-{{ entry.key }}')" style="background-color: var(--global-divider-color, rgba(0,0,0,0.05)); color: var(--global-text-color); padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid var(--global-border-color); cursor: pointer;">BIB</button>
     {% endif %}
 
     {% if entry.abstract %}
-    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}" style="background-color: #f1f1f1; color: #333; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid #ddd; cursor: pointer;">Abstract</button>
+    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}" style="background-color: var(--global-divider-color, rgba(0,0,0,0.05)); color: var(--global-text-color); padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 500; border: 1px solid var(--global-border-color); cursor: pointer;">Abstract</button>
     {% endif %}
   </div>
 
   {% if entry.abstract %}
   <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 15px;">
-    <pre id="bib-text-{{ entry.key }}" style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.bibtex | remove: "entry.abstract" }}</pre>
+    <pre id="bib-text-{{ entry.key }}" style="background: var(--global-code-bg, rgba(0,0,0,0.1)); color: var(--global-text-color); padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid var(--global-border-color); overflow-x: auto;">{{ entry.bibtex | remove: "entry.abstract" }}</pre>
   </div>
   {% else %}
   <div class="pub-collapse" id="bib-{{ entry.key }}" style="display: none; margin-top: 15px;">
-    <pre id="bib-text-{{ entry.key }}" style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.bibtex }}</pre>
+    <pre id="bib-text-{{ entry.key }}" style="background: var(--global-code-bg, rgba(0,0,0,0.1)); color: var(--global-text-color); padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid var(--global-border-color); overflow-x: auto;">{{ entry.bibtex }}</pre>
   </div>
   {% endif %}
 
   {% if entry.abstract %}
   <div class="pub-collapse" id="abs-{{ entry.key }}" style="display: none; margin-top: 15px;">
-    <pre style="background: white; padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid #e0e0e0; overflow-x: auto;">{{ entry.abstract }}</pre>
+    <pre style="background: var(--global-code-bg, rgba(0,0,0,0.1)); color: var(--global-text-color); padding: 12px; border-radius: 6px; font-size: 0.8em; border: 1px solid var(--global-border-color); overflow-x: auto; white-space: pre-wrap; word-break: break-word;">{{ entry.abstract }}</pre>
   </div>
   {% endif %}
 </div>
@@ -94,15 +94,14 @@
 function copyBibToClipboard(elementId) {
   const bibText = document.getElementById(elementId).innerText;
   navigator.clipboard.writeText(bibText).then(() => {
-    // Show toast notification
     const toast = document.createElement('div');
     toast.textContent = 'Citation copied to clipboard!';
     toast.style.cssText = `
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #333;
-      color: white;
+      background-color: var(--global-text-color, #333);
+      color: var(--global-bg-color, #fff);
       padding: 12px 20px;
       border-radius: 6px;
       font-size: 0.9em;
@@ -112,7 +111,6 @@ function copyBibToClipboard(elementId) {
     `;
     document.body.appendChild(toast);
     
-    // Remove toast after 2 seconds
     setTimeout(() => {
       toast.style.animation = 'slideOut 0.3s ease-out';
       setTimeout(() => toast.remove(), 300);
@@ -125,24 +123,11 @@ function copyBibToClipboard(elementId) {
 
 <style>
 @keyframes slideIn {
-  from {
-    transform: translateX(400px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  from { transform: translateX(400px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
-
 @keyframes slideOut {
-  from {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(400px);
-    opacity: 0;
-  }
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(400px); opacity: 0; }
 }
 </style>
