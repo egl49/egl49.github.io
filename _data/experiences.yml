@@ -60,7 +60,7 @@
 
 - id: "cornell-academic"
   title: "Academic Coursework & General Skills"
-  type: "hidden"
+  type: "education"
   organization: "Cornell University"
   advisor: "Department of Physics"
   term: "Ongoing Portfolio"
