@@ -19,32 +19,3 @@ I am looking to use the SpECTRE code base to compare simulated solutions of neut
 *Selected oral talks and poster presentations given at symposia and national meetings.*
 
 {% bibliography %}
-<style>
-  /* 1. Remove the forced white card boxes and let them match your dark background */
-  .bibliography .card,
-  .bibliography li,
-  .bibliography .row,
-  .bibliography [class*="card-"] {
-    background: transparent !important;
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-  }
-
-  /* 2. Bring back full opacity to the text so it isn't invisible/washed out */
-  .bibliography .title,
-  .bibliography .author,
-  .bibliography .periodical,
-  .bibliography span,
-  .bibliography li * {
-    color: var(--global-text-color, #ffffff) !important;
-    opacity: 1 !important;
-  }
-
-  /* 3. Give each entry a clean, subtle bottom divider line instead of bulky white boxes */
-  .bibliography li {
-    border-bottom: 1px solid var(--global-border-color, rgba(255, 255, 255, 0.1)) !important;
-    padding-bottom: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
-  }
-</style>
