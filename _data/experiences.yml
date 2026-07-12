@@ -91,9 +91,9 @@
   organization: "AEPxPhysics Formal Committee, Cornell Society of Physics Students and Cornell Applied Engineering Physics Society"
   term: "Aug 2025 - Present"
   image: "eboard_formal.jpeg"
-  description: "Every year, I form a committee made up of executive members from all of Cornell’s physics organizations. I oversee the committee, and book all major venues and vendors for the event. I also handle all of the advertising, and I am responsible for approving the budget alongside our treasurers. 
-"
+  description: "Every year, I form a committee made up of executive members from all of Cornell’s physics organizations. I oversee the committee, and book all major venues and vendors for the event. I also handle all of the advertising, and I am responsible for approving the budget alongside our treasurers."
   skills: ["Project Management", "Event Planning", "Large Scale Events", "Budget Management", "Communication", "Team Leadership"]
+
 - id: "alumni-interviewer"
   title: "A Physicist Is... Profile Writer and Interviewer"
   type: "leadership"
@@ -102,7 +102,7 @@
   organization: "Cornell University, Department of Physics"
   term: "Jan 2025 - Present"
   image: "Toni.png"
-  description: "I work with faculty in the Cornell Physics Department to find alumni in varying fields to feature for the "A Physicist Is..." Spotlight project. I conduct 30 minute online interviews with three alumni per semester and write a short profile on their career trajectory to be displayed on posters around the department and on the department website."
+  description: "I work with faculty in the Cornell Physics Department to find alumni in varying fields to feature for the 'A Physicist Is...' Spotlight project. I conduct 30 minute online interviews with three alumni per semester and write a short profile on their career trajectory to be displayed on posters around the department and on the department website."
   skills: ["Interviewing", "Alumni Relations", "Profile Writing", "Communication", "Public Speaking", "Science Communication"]
 
 - id: "community-committee"
