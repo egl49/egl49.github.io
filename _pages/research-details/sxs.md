@@ -2,17 +2,16 @@
 title: "Numerical Relativity & Compact Objects"
 layout: page
 permalink: /research/simulating-extreme-spacetimes/
----
-
----
 mathjax: true
 ---
 
-I am working towards my senior thesis in this role, where I implement modified Tolman–Oppenheimer–Volkoff Equations in Python to numerically solve theoretical neutron stars with different equations of state, and perform error analysis to determine the validity of simulated solutions. The form of the TOV equations I am using are based on the ones defined by <a href="https://doi.org/10.48550/arXiv.gr-qc/9802072" target="_blank">Lindblom, Lee (1998)</a>, and  <a href="https://spectre-code.org/classRelativisticEuler_1_1Solutions_1_1TovSolution.html#details" target="_blank">SpECTRE’s TOV solver code</a>. The coupled ODE’s are as follows: 
+I am working towards my senior thesis in this role, where I implement modified Tolman–Oppenheimer–Volkoff Equations in Python to numerically solve theoretical neutron stars with different equations of state (EOS), and perform error analysis to determine the validity of simulated solutions. The form of the TOV equations I am using are based on the ones defined by <a href="https://doi.org/10.48550/arXiv.gr-qc/9802072" target="_blank">Lindblom, Lee (1998)</a>, and  <a href="https://spectre-code.org/classRelativisticEuler_1_1Solutions_1_1TovSolution.html#details" target="_blank">SpECTRE’s TOV solver code</a>. The coupled ODE’s are as follows: 
 
 $$\frac{du}{dH} = -\frac{2u(1-2v)}{4\pi u p(h) + v}$$
 
 $$\frac{dv}{dH} = -(1-2v)\frac{4\pi u e(h) - v}{4\pi u p(h) + v}$$
+
+And the EOS that I work most frequently with is the polytropic EOS $p = K\rho^\Gamma$
 
 
  Currently, my project is to improve the simulated solutions of the TOV equations by performing an expansion around the singular point at the start of integration. I am working to implement this expansion completely analytically so that it can be generalizable to all equations of state. I have performed an integration for the first four orders of expansion and have performed an error comparison for each expansion order to determine the radius about the stellar center for which the expansion is valid. The error comparison looks like: 
@@ -108,20 +107,10 @@ v &\approx \frac{4}{3}\pi u e \\[1ex]
       </div>
     </div>
 
-    <div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden;">
-      <div style="width: 100%; height: 200px; overflow: hidden;">
-        <img src="{{ site.baseurl }}/assets/img/your-image-3.jpg" alt="Description" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
-      <div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
-        Caption summarizing team milestones, outreach sessions, or concert performance notes.
-      </div>
-    </div>
-
   </div>
 </div>
 
 <style>
-  /* Custom scrollbar configurations to fit nicely with dark themes */
   .custom-gallery-scroll::-webkit-scrollbar {
     height: 6px;
   }
