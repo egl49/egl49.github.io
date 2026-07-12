@@ -34,7 +34,7 @@
   organization: "Simulating eXtreme Spacetimes (SXS)"
   advisor: "Prof. Nils Deppe"
   term: "Aug 2025 - Present"
-  image: "sxs_logo_horizonal_4240px.png"
+  image: "sxs_logo_horizontal_4240px.png"
   description: "I work to implement a modified version of the Tolman–Oppenheimer–Volkoff equations in Python to numerically solve theoretical neutron stars with different equations of state (EOS). I have improved the precision of the simulated solutions by performing a rigorous expansion of the coupled ODE’s near the center of the star, and I am currently working to implement this improvement into the C++ SpECTRE code base. I am also investigating neutron star binary waveforms with degenerate tidal deformability factors, but different internal EOS, which will allow me to determine whether future observatories will have a high enough resolution to tell us anything new about neutron star microphysics. "
   skills: ["Python", "C++", "Numerical Relativity", "SpECTRE", "Data Analysis", "Computational Physics", "General Relativity", "Fluid Dynamics", "Relativity", "Theoretical Physics"]
 
