@@ -77,7 +77,7 @@ An M27 plate from the Yerkes collection.
 
 <div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden; transition: border-color 0.2s ease, transform 0.2s ease;">
 <div style="width: 100%; height: 200px; overflow: hidden;">
-<a href="#img4-lightbox"><img src="{{ site.baseurl }}/images/research/yerkes_in_dome.jpg" alt="y41 dome" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+<a href="#img4-lightbox"><img src="{{ site.baseurl }}/images/research/yerkes_in_dome.jpeg" alt="y41 dome" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
 </div>
 <div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
 Me inside the Y41 dome!
@@ -86,7 +86,7 @@ Me inside the Y41 dome!
 <div id="img4-lightbox" class="lightbox-overlay">
 <a href="#_" class="lightbox-close-bg"></a>
 <div class="lightbox-content">
-<img src="{{ site.baseurl }}/images/research/yerkes_in_dome.jpg" alt="y41 dome">
+<img src="{{ site.baseurl }}/images/research/yerkes_in_dome.jpeg" alt="y41 dome">
 <a href="#_" class="lightbox-close-btn">&times;</a>
 </div>
 </div>
