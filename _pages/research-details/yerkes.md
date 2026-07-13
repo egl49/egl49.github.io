@@ -22,6 +22,123 @@ I also plotted flux curves across the nebula, then overlaid the cutoffs I found 
 
 The growth rates for both lobes were consistent with published values for M27, of about 2.0 arcsec/century. For even more detail, please refer to my AAS iPoster on my publications tab. 
 
+<div class="custom-gallery-container" style="margin: 30px 0; overflow: hidden; width: 100%;">
+<div class="custom-gallery-scroll" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; -webkit-overflow-scrolling: touch;">
+
+<div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden; transition: border-color 0.2s ease, transform 0.2s ease;">
+<div style="width: 100%; height: 200px; overflow: hidden;">
+<a href="#img1-lightbox"><img src="{{ site.baseurl }}/images/research/color_dumbbell.jpeg" alt="Dumbbell False Color Image" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+</div>
+<div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
+False color image of the Dumbbell Nebula (M27), taken on the Yerkes 41" Reflector in 2025. 
+</div>
+</div>
+<div id="img1-lightbox" class="lightbox-overlay">
+<a href="#_" class="lightbox-close-bg"></a>
+<div class="lightbox-content">
+<img src="{{ site.baseurl }}/images/research/color_dumbbell.jpeg" alt="Dumbbell False Color Image">
+<a href="#_" class="lightbox-close-btn">&times;</a>
+</div>
+</div>
+
+
+<div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden; transition: border-color 0.2s ease, transform 0.2s ease;">
+<div style="width: 100%; height: 200px; overflow: hidden;">
+<a href="#img2-lightbox"><img src="{{ site.baseurl }}/images/research/distance_from_white_dwarf.jpeg" alt="growth plot" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+</div>
+<div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
+Distance from white dwarf as a function of year. Separate lin regressions were made for 1906-1931 and 1931-2025 due to the inconsistencies in the 1906 plate discussed earlier. 
+</div>
+</div>
+<div id="img2-lightbox" class="lightbox-overlay">
+<a href="#_" class="lightbox-close-bg"></a>
+<div class="lightbox-content">
+<img src="{{ site.baseurl }}/images/research/distance_from_white_dwarf.jpeg" alt="growth plot">
+<a href="#_" class="lightbox-close-btn">&times;</a>
+</div>
+</div>
+
+
+<div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden; transition: border-color 0.2s ease, transform 0.2s ease;">
+<div style="width: 100%; height: 200px; overflow: hidden;">
+<a href="#img3-lightbox"><img src="{{ site.baseurl }}/images/research/dumbbell_plate.jpeg" alt="dumbbell plate" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+</div>
+<div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
+An M27 plate from the Yerkes collection.
+</div>
+</div>
+<div id="img3-lightbox" class="lightbox-overlay">
+<a href="#_" class="lightbox-close-bg"></a>
+<div class="lightbox-content">
+<img src="{{ site.baseurl }}/images/research/dumbbell_plate.jpeg" alt="dumbbell plate">
+<a href="#_" class="lightbox-close-btn">&times;</a>
+</div>
+</div>
+
+<div class="gallery-item" style="flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; background-color: var(--global-card-bg, rgba(255, 255, 255, 0.02)); border: 1px solid var(--global-border-color, rgba(255,255,255,0.1)); border-radius: 8px; overflow: hidden; transition: border-color 0.2s ease, transform 0.2s ease;">
+<div style="width: 100%; height: 200px; overflow: hidden;">
+<a href="#img4-lightbox"><img src="{{ site.baseurl }}/images/research/yerkes_in_dome.jpg" alt="y41 dome" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></a>
+</div>
+<div class="gallery-caption" style="padding: 12px; font-size: 0.85em; color: var(--global-text-color); line-height: 1.4; border-top: 1px solid var(--global-border-color, rgba(255,255,255,0.1));">
+Me inside the Y41 dome!
+</div>
+</div>
+<div id="img4-lightbox" class="lightbox-overlay">
+<a href="#_" class="lightbox-close-bg"></a>
+<div class="lightbox-content">
+<img src="{{ site.baseurl }}/images/research/yerkes_in_dome.jpg" alt="y41 dome">
+<a href="#_" class="lightbox-close-btn">&times;</a>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+<style>
+.custom-gallery-scroll::-webkit-scrollbar {
+height: 6px;
+}
+.custom-gallery-scroll::-webkit-scrollbar-track {
+background: transparent;
+}
+.custom-gallery-scroll::-webkit-scrollbar-thumb {
+background: var(--global-divider-color, rgba(255, 255, 255, 0.15));
+border-radius: 10px;
+}
+.custom-gallery-scroll::-webkit-scrollbar-thumb:hover {
+background: #733BEB;
+}
+
+.gallery-item:hover {
+border-color: #733BEB !important;
+transform: translateY(-2px);
+}
+
+.lightbox-overlay {
+display: none;
+position: fixed;
+z-index: 9999;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background: var(--global-bg-color, #fff);
+filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+align-items: center;
+justify-content: center;
+}
+@defaults {
+.lightbox-overlay {
+background: rgba(var(--global-bg-color-rgb, 0, 0, 0), 0.95);
+}
+}
+
+.lightbox-overlay:target {
+display: flex;
+}
+.lightbox-close-bg {
 
 
 
