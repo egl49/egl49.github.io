@@ -54,7 +54,7 @@
   type: "research"
   organization: "Tomographic Ionized Carbon Intensity Mapping Experiment (TIME)"
   advisor: "Prof. Abigail Crites"
-  term: "Jan 2025 - May 2025"
+  term: "Jan 2024 - May 2025"
   image: "cryo_group_square.jpeg"
   description: "I implemented a Python calibration pipeline to maximize the number of viable TES Bolometers (TESB) in the TIME detector array. Each TESB required a specific transition temperature anywhere from 450-700 mK due to manufacturing inconsistencies, so I plotted the resistance curves of each column of detectors to determine the optimal current to pass. I also installed the detectors, tested the wiring of the cryostat, used a crane to assemble and disassemble the instrument, and worked on code to control an IR source array on a motor stepper to generate test observational data. "
   skills: ["Cryogenics", "Electronics", "Cosmology", "Hardware", "Hardware Installation", "Troubleshooting", "Astrophysics", "Telescope", "Experimental Physics"]
