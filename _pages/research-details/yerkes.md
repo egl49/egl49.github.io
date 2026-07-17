@@ -9,10 +9,11 @@ During the summer of 2025, I conducted a growth study of the Dumbbell Nebula (M2
 I conducted several observing runs over the course of the summer to capture a modern-day photo of M27, and I used the Yerkes 41” Reflector (Y41) and its CMOS camera to take exposures with empty, g’, i’, r’, H-alpha, and OIII filters. I used the pinpoint astrometry feature in MaximDL to insert World Coordinate System (WCS) information into the FITS (Flexible Image Transport System) header of each FITS file. This allowed me to have RA and Dec coordinates for every pixel in each image, and combine exposures over top of each-other to improve my signal-to-noise ratio. I stacked all my exposures using AstroImageJ, used the empty-filter exposures as my 2025 data point, and used the other filters to create a color image. 
 
 I found over 20 different M27 plates in the Yerkes plate vault from different telescopes, and digitized all of them to allow for WCS information to be added to each file with astrometry.net. The plates used for this study are:
-R-555: 90 min exposure taken by Jordan in 1906 on the Yerkes 24"
-60PN-46: 60 min exposure taken by Ross in 1931 on the Mt. Wilson 60"
-Y41-311: 60 min exposure taken by Cudworth in 1975 on the Yerkes 41"
-Y41-749: unknown exposure time taken by Ulowetz on the Yerkes 41"
+
+* R-555: 90 min exposure taken by Jordan in 1906 on the Yerkes 24"
+* 60PN-46: 60 min exposure taken by Ross in 1931 on the Mt. Wilson 60"
+* Y41-311: 60 min exposure taken by Cudworth in 1975 on the Yerkes 41"
+* Y41-749: unknown exposure time taken by Ulowetz on the Yerkes 41"
 
 Other plates of M27 were removed due to tracking issues, emulsion deterioration, and saturation levels.
 
