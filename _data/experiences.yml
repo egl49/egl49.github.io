@@ -77,7 +77,7 @@
   title: "President"
   type: "leadership"
   current: true
-  has_page: true
+  has_page: false
   organization: "Cornell Society of Physics Students"
   term: "Dec 2025 - Present"
   image: "sps_eboard_photo.JPG"
@@ -88,7 +88,7 @@
   title: "Leader and Host"
   type: "leadership"
   current: true
-  has_page: true
+  has_page: false
   organization: "AEPxPhysics Formal Committee, Cornell Society of Physics Students and Cornell Applied Engineering Physics Society"
   term: "Aug 2025 - Present"
   image: "eboard_formal.jpeg"
@@ -99,7 +99,7 @@
   title: "A Physicist Is... Profile Writer and Interviewer"
   type: "leadership"
   current: true
-  has_page: true
+  has_page: false
   organization: "Cornell University, Department of Physics"
   term: "Jan 2025 - Present"
   image: "Toni.png"
