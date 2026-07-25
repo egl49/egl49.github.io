@@ -1,7 +1,7 @@
 ---
 layout: gridlay
 title: "Presentations and Thesis"
-permalink: /publications/
+permalink: /presentations/
 ---
 
 ## Senior Thesis Proposal
