@@ -38,7 +38,7 @@ analytics:
 # ============================================================
 nav_pages:
   - name: about
-  - name: publications
+  - name: presentations
   # - name: presentations
   - name: research
   # - name: awards
