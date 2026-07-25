@@ -39,7 +39,7 @@ analytics:
 nav_pages:
   - name: about
   - name: presentations
-  # - name: presentations
+  # - name: publications
   - name: research
   # - name: awards
   # - name: software
