@@ -3,23 +3,23 @@
 # ==========================================
 
 - id: "ula"
-  title: "Physics Undergraduate Learning Assistant (ULA)"
+  title: "Cornell Physics Undergraduate Learning Assistant (ULA)"
   type: "teaching"
   has_page: false
   organization: "Cornell University"
   supervisor: "Physics Department Faculty"
-  term: "Academic Year Role"
+  term: "Jan 2026 - Present"
   image: ""
   description: "I work with students of PHYS 3316: Basics of Quantum Mechanics during set office hours to assist in learning. The students can come to me with any questions regarding homework, exam preparation, or general content questions. I work closely with the course staff to ensure students are on a good learning trajectory, and I received training in teaching and mentorship."
   skills: ["Physics Education", "Public Speaking", "Mentorship", "Classroom Leadership", "Teaching", "Science Communication", "Communication", "Peer Mentoring", "Team Leadership"]
 
 - id: "peer-mentor"
-  title: "Peer Mentorship & Academic Support"
+  title: "Society of Physics Students Peer Mentor"
   type: "teaching"
   has_page: false
   organization: "Cornell University"
   supervisor: "Society of Physics Students"
-  term: "Continuous"
+  term: "Aug 2024 - Present"
   image: ""
   description: " I provide guidance to seven students on adjusting to college life, navigating the physics major, and anything else they want to talk about. I keep in constant contact with my mentees, and I meet in person with them at least once a month. I also organized the peer and grad mentorship programs for 2025-2026, and I matched over 70 incoming freshmen to over 30 mentors, our largest program to date."
   skills: ["Mentorship", "Peer Mentoring", "Youth Mentoring", "Communication", "Community Outreach"]
