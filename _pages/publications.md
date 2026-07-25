@@ -1,6 +1,6 @@
 ---
 layout: gridlay
-title: "Publications"
+title: "Presentations and Thesis"
 permalink: /publications/
 ---
 
