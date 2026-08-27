@@ -1,6 +1,16 @@
 # ==========================================
 # TEACHING EXPERIENCES
 # ==========================================
+- id: "ula"
+  title: "Cornell Physics Learning Strategies Center (LSC) Tutor"
+  type: "teaching"
+  has_page: false
+  organization: "Cornell University"
+  supervisor: "Physics Department Faculty"
+  term: "Aug 2026 - Present"
+  image: ""
+  description: "I work with students in the introductory physics courses to help them learn material during office hours. The students can come to me with any questions on the topics of mechanics, E&M, waves, and (if booked ahead of time) more advanced courses. I work with a team of several tutors from physics and related majors to provide the best learning experience for the students."
+  skills: ["Physics Education", "Public Speaking", "Mentorship", "Classroom Leadership", "Teaching", "Science Communication", "Communication", "Peer Mentoring", "Team Leadership"]
 
 - id: "ula"
   title: "Cornell Physics Undergraduate Learning Assistant (ULA)"
@@ -8,7 +18,7 @@
   has_page: false
   organization: "Cornell University"
   supervisor: "Physics Department Faculty"
-  term: "Jan 2026 - Present"
+  term: "Jan 2026 - May 2026"
   image: ""
   description: "I work with students of PHYS 3316: Basics of Quantum Mechanics during set office hours to assist in learning. The students can come to me with any questions regarding homework, exam preparation, or general content questions. I work closely with the course staff to ensure students are on a good learning trajectory, and I received training in teaching and mentorship."
   skills: ["Physics Education", "Public Speaking", "Mentorship", "Classroom Leadership", "Teaching", "Science Communication", "Communication", "Peer Mentoring", "Team Leadership"]
